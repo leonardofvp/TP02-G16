@@ -403,7 +403,12 @@ body h2 {
         max-width: 25%;
     }
     .equipo-grid {
-        grid-template-columns: repeat(5, 1fr);
+         .equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-content: center; 
+    gap: 1.5rem;
+    margin-top: 2rem;
     }
     .habilidades-grid {
         grid-template-columns: repeat(3, 1fr);
