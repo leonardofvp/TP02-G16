@@ -5,11 +5,11 @@ import TarjetaProyecto from '../components/TarjetaProyecto';
 const Home = () => {
   // Array de integrantes 
   const teamMembers = [
-    { id: 1, name: "Leandro Raúl Ferrero", avatar: "img/leandro-avatar.jpg", path: "/leandro" },
-    { id: 2, name: "Carolina Corradi", avatar: "img/caro.png", path: "/caro" },
-    { id: 3, name: "Manuel Espíndola", avatar: "img/manu.png", path: "/manuel" },
-    { id: 4, name: "Gabriela Gonzalez", avatar: "img/melinya-avatar.jpg", path: "/gabriela" },
-    { id: 5, name: "Leonardo Vargas", avatar: "img/leo.png", path: "/leonardo" }
+    { id: 1, name: "Leandro Raúl Ferrero", avatar: "/img/leandro-avatar.jpg", path: "/leandro" },
+    { id: 2, name: "Carolina Corradi", avatar: "/img/caro.png", path: "/caro" },
+    { id: 3, name: "Manuel Espíndola", avatar: "/img/manu.png", path: "/manuel" },
+    { id: 4, name: "Gabriela Gonzalez", avatar: "/img/melinya-avatar.jpg", path: "/gabriela" },
+    { id: 5, name: "Leonardo Vargas", avatar: "/img/leo.png", path: "/leonardo" }
   ];
 
   // Array de proyectos
