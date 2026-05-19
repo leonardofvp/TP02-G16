@@ -1,6 +1,6 @@
 import React from 'react';
-import MemberCard from '../components/MemberCard';
-import ProjectCard from '../components/ProjectCard';
+import TarjetaIntegrante from '../components/TarjetaIntegrante';
+import TarjetaProyecto from '../components/TarjetaProyecto';
 
 const Home = () => {
   // Array de integrantes 
@@ -59,7 +59,7 @@ const Home = () => {
         <h2>Equipo de Trabajo</h2>
         <div className="equipo-grid">
           {teamMembers.map(member => (
-            <MemberCard 
+            <TarjetaIntegrante
               key={member.id}
               name={member.name}
               avatar={member.avatar}
@@ -114,7 +114,7 @@ const Home = () => {
         <p>Previamente a este tarjeta web, nuestro equipo ha colaborado con éxito en:</p>
         <div className="proyectos-grid">
           {pastProjects.map(project => (
-            <ProjectCard 
+            <TarjetaProyecto 
               key={project.id}
               title={project.title}
               description={project.description}
