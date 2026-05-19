@@ -203,7 +203,9 @@ body h2 {
     flex-direction: column;
     justify-content: space-between;
     transition: border 0.5s;
-    text-align: center; 
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .tarjeta-item h3 {
@@ -400,10 +402,13 @@ body h2 {
 
 @media (min-width: 1200px) {
     .logo-equipo {
-        max-width: 25%;
-    }
+        max-width: 25%;}
     .equipo-grid {
-        grid-template-columns: repeat(5, 1fr);
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
     }
     .habilidades-grid {
         grid-template-columns: repeat(3, 1fr);
