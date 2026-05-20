@@ -314,11 +314,15 @@ body h2 {
 }
 
 .avatar-container img {
-    width: 12rem;
-    height: 12rem;
+     width: 100%;          
+    max-width: 150px;        
+    height: auto;            
+    aspect-ratio: 1 / 1;     
+    object-fit: cover;       
     border-radius: 50%;
-    object-fit: cover;
     border: 0.3rem solid var(--color-detalle);
+    display: block;
+    margin: 0 auto;
 }
 
 .tarjeta-bitacora {
