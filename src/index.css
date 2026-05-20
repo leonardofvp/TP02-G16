@@ -201,7 +201,8 @@ body h2 {
     border: 0.5rem solid transparent; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; 
+    gap: 1rem;
     transition: border 0.5s;
     text-align: center; 
 }
