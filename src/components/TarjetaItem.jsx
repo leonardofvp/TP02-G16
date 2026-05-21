@@ -12,13 +12,13 @@ export default function TarjetaItem({ titulo, imagen, children }) {
       )}
 
       <h3>{titulo}</h3>
-      
+
       <div className={`detalle-tarjeta ${mostrarDetalles ? 'activo' : ''}`}>
         {children}
       </div>
 
-      <button 
-        className="boton-detalles" 
+      <button
+        className="boton-detalles"
         onClick={() => setMostrarDetalles(!mostrarDetalles)}
       >
         {mostrarDetalles ? 'Ocultar detalles' : 'Ver detalles'}

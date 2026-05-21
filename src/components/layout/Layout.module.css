@@ -1,0 +1,16 @@
+    .contenedorApp {
+        display: flex;
+        flex-direction: row;
+        min-height: 100svh;
+        width: 100%;
+    }
+
+    .contenedorMain {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorContenido {
+        flex: 1;
+    }
