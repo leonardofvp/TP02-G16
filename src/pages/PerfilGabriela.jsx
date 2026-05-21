@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import TarjetaItem from '../TarjetaItem'; 
+import TarjetaItem from '../components/TarjetaItem';
 
 export default function PerfilGabriela() {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -9,8 +9,8 @@ export default function PerfilGabriela() {
     <div id="cuerpo-perfil">
       <div className="contenedor-superior">
         <header id="header" className="header">
-          <div 
-            className="contenedor-menu-hamburguesa" 
+          <div
+            className="contenedor-menu-hamburguesa"
             onClick={() => setMenuAbierto(!menuAbierto)}
           >
             <div className={`menu-hamburguesa ${menuAbierto ? 'open' : ''}`}>
@@ -19,17 +19,17 @@ export default function PerfilGabriela() {
               <div className="bar-ham bar-bottom"></div>
             </div>
           </div>
-          
-          <Link 
-            to="/" 
-            style={{ display: 'inline-block', width: '7rem', height: '7rem', padding: 0, lineHeight: 0 }} 
+
+          <Link
+            to="/"
+            style={{ display: 'inline-block', width: '7rem', height: '7rem', padding: 0, lineHeight: 0 }}
             onClick={() => setMenuAbierto(false)}
           >
-            <img 
-              src="img/logo-orion.png" 
-              alt="Logo" 
-              className="logo-equipo" 
-              style={{ width: '100%', height: '100%', maxWidth: 'none', objectFit: 'cover' }} 
+            <img
+              src="img/logo-orion.png"
+              alt="Logo"
+              className="logo-equipo"
+              style={{ width: '100%', height: '100%', maxWidth: 'none', objectFit: 'cover' }}
             />
           </Link>
         </header>
@@ -64,7 +64,7 @@ export default function PerfilGabriela() {
                 <p>
                   Soy Melinya. Me considero una persona curiosa y creativa, lo que me llevó a interesarme por el desarrollo web. Disfruto del proceso de transformar una idea en una página funcional. Además de la programación, me interesan el diseño, la ciberseguridad y la tecnología de vanguardia. Mi objetivo como desarrollador es construir sitios web que no solo funcionen bien, sino que también conecten con las personas de manera sencilla y eficiente,
                   <strong> haciendo énfasis en la accesibilidad digital.</strong>
-                </p> 
+                </p>
               </div>
               <div className="avatar-container">
                 <img src="/img/melinya-avatar.jpg" alt="Avatar de Melinya Bytes" />
@@ -76,8 +76,8 @@ export default function PerfilGabriela() {
         <section id="habilidades" className="section-main">
           <h2>Habilidades</h2>
           <p>Estas son algunas de mis habilidades</p>
-    
-          <div className="habilidades-grid">       
+
+          <div className="habilidades-grid">
             <article className="tarjeta-item">
               <h3>Modelado y análisis de datos</h3>
               <p>Especialización en la estructuración, análisis e interpretación de datos científicos.</p>
@@ -113,7 +113,7 @@ export default function PerfilGabriela() {
               <p>El hallazgo de una fórmula contra el envejecimiento trae consigo no sólo superpoblación, sino también la transformación del tiempo en moneda de cambio que permite sufragar tanto lujos como necesidades. Los ricos pueden vivir para siempre, pero los demás tendrán que negociar cada minuto de vida. Los pobres mueren jóvenes</p>
             </TarjetaItem>
           </div>
-        </section>  
+        </section>
 
         <section id="tarjetas-musica" className="section-main">
           <h2>Mis 3 Discos Favoritos</h2>
@@ -138,7 +138,7 @@ export default function PerfilGabriela() {
               </ul>
             </TarjetaItem>
           </div>
-        </section>       
+        </section>
       </main>
 
       <footer className="main-footer">
