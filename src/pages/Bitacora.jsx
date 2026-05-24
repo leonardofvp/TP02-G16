@@ -12,6 +12,13 @@ function Bitacora() {
 					<h3>Decisiones de diseño tomadas</h3>
 					<div className="detalle-tarjeta">
 						<ul>
+							<li> Migración a Arquitectura React</li>
+							<li><strong>Objetivo:</strong> Migrar la estructura estática del proyecto previo a una arquitectura basada en componentes reutilizables utilizando React, garantizando un comportamiento de Single Page Application (SPA)</li>
+							<li><strong>Modularización y Creación de Componentes Reutilizables:</strong></li>
+							<li> Para optimizar el código y cumplir con las buenas prácticas de React, se fragmentó la interfaz original en componentes independientes:</li>
+    						<li> Navbar.jsx y Footer.jsx: Se aislaron las estructuras globales de navegación y pie de página para que actúen como un Layout fijo en todo el sitio.</li>
+   							<li> MemberCard.jsx: Se creó un componente dinámico para la grilla del equipo.</li>
+    						<li> ProjectCard.jsx: Se modularizó la sección de "Trayectoria del Equipo" para estandarizar la presentación de los proyectos anteriores del grupo (Club Deportivo Orión y Clínica SePrice).</li>
 							<li><strong>Enfoque y Layout:</strong> Adopción de <em>Mobile First</em> estructurando el layout principal con Flexbox para responder a los breakpoints exigidos (400px, 900px y 1200px).</li>
 							<li><strong>Tipografía:</strong> Estandarización con Montserrat y Roboto vía Google Fonts para garantizar consistencia visual.</li>
 							<li><strong>Arquitectura:</strong> Archivos HTML en la raíz del proyecto y lógica/estilos en directorios separados (<code>/css</code>, <code>/js</code>, <code>/img</code>).</li>
