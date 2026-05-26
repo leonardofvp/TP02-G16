@@ -1,0 +1,7 @@
+.contenedorTecnologias {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}

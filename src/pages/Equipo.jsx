@@ -1,50 +1,57 @@
 import React from 'react'
 import BotonEnlace from '../components/ui/Botones/BotonEnlace'
+import TarjetaIntegrante from '../components/TarjetaIntegrante'
+import leandroAvatar from '../assets/img/leandro-avatar.jpg'
+import caroAvatar from '../assets/img/caro.png'
+import manuAvatar from '../assets/img/manu.png'
+import gabrielaAvatar from '../assets/img/melinya-avatar.jpg'
+import leonardoAvatar from '../assets/img/leo.png'
+import styles from './Equipo.module.css'
 
 function Equipo() {
     return (
             <section id="integrantes" className="section-main">
             <h2>Equipo de Trabajo</h2>
-            <div className="equipo-grid">
-                <article className="tarjeta-item">
-                    <div className="avatar-container">
-                        <img src="img/leandro-avatar.jpg" alt="Leandro Raúl Ferrero"/>
-                    </div>
-                    <h3>Leandro Raúl Ferrero</h3>
-                    <BotonEnlace destino='/equipo/perfil' texto='Ver equipo'/>
-                </article>
+            <div className={styles.equipoGrid}>
+                <TarjetaIntegrante
+                    avatar={leandroAvatar}
+                    textoAlternativo='Avatar de Leandro Ferrero'
+                    nombre='Leandro Ferrero'
+                    destino='/equipo/perfil'
+                    texto='Ver perfil'
+                />
 
-                <article className="tarjeta-item">
-                    <div className="avatar-container">
-                        <img src="img/caro.png" alt="Carolina Corradi"/>
-                    </div>
-                    <h3>Carolina Corradi</h3>
-                    <BotonEnlace destino='/equipo/perfil' texto='Ver equipo'/>
-                </article>
+                <TarjetaIntegrante
+                    avatar={caroAvatar}
+                    textoAlternativo='Avatar de Carolina Corradi'
+                    nombre='Carolina Corradi'
+                    destino='/equipo/perfil'
+                    texto='Ver perfil'
+                />
 
-                <article className="tarjeta-item">
-                    <div className="avatar-container">
-                        <img src="img/manu.png" alt="Manuel Espíndola"/>
-                    </div>
-                    <h3>Manuel Espíndola</h3>
-                    <BotonEnlace destino='/equipo/perfil' texto='Ver equipo'/>
-                </article>
+                <TarjetaIntegrante
+                    avatar={manuAvatar}
+                    textoAlternativo='Avatar de Manuel Espíndola'
+                    nombre='Manuel Espíndola'
+                    destino='/equipo/perfil'
+                    texto='Ver perfil'
+                />
 
-                <article className="tarjeta-item">
-                    <div className="avatar-container">
-                        <img src="img/melinya-avatar.jpg" alt="Melinya Byte"/>
-                    </div>
-                    <h3>Gabriela Gonzalez</h3>
-                    <BotonEnlace destino='/equipo/gabriela' texto='Ver perfil'/>
-                </article>
+                <TarjetaIntegrante
+                    avatar={gabrielaAvatar}
+                    textoAlternativo='Avatar de Gabriela Gonzalez'
+                    nombre='Gabriela Gonzalez'
+                    destino='/equipo/gabriela'
+                    texto='Ver perfil'
+                />
 
-                <article className="tarjeta-item">
-                    <div className="avatar-container">
-                        <img src="img/leo.png" alt="Leonardo Vargas"/>
-                    </div>
-                    <h3>Leonardo Vargas</h3>
-                    <BotonEnlace destino='/equipo/perfil' texto='Ver equipo'/>
-                </article>
+                <TarjetaIntegrante
+                    avatar={leonardoAvatar}
+                    textoAlternativo='Avatar de Leonardo Vargas'
+                    nombre='Leonardo Vargas'
+                    destino='/equipo/perfil'
+                    texto='Ver perfil'
+                />
             </div>
         </section>
     )

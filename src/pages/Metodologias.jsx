@@ -1,25 +1,29 @@
-import React from 'react'
+import React from 'react';
+import TarjetaSeccion from '../components/TarjetaSeccion';
+import styles from './Metodologias.module.css';
 
 function Metodologias() {
     return (
-        <section id="metodologia" className="section-main">
+        <section className={styles.seccionMetodologias}>
             <h2>Cómo trabajamos</h2>
-            <div className="metodologia-grid">
-                <article className="tarjeta-item">
-                    <h3>Innovación</h3>
-                    <p>Buscamos soluciones creativas a problemas técnicos complejos.</p>
-                </article>
-                <article className="tarjeta-item">
-                    <h3>Calidad</h3>
-                    <p>Aplicamos buenas prácticas de código y diseño responsivo.</p>
-                </article>
-                <article className="tarjeta-item">
-                    <h3>Sinergia</h3>
-                    <p>Potenciamos nuestras habilidades individuales en cada proyecto grupal.</p>
-                </article>
+            <div className={styles.contenedorMetodologias}>
+                <TarjetaSeccion
+                    titulo="Innovación"
+                    descripcion="Buscamos soluciones creativas a problemas técnicos complejos."
+                />
+
+                <TarjetaSeccion
+                    titulo="Calidad"
+                    descripcion="Aplicamos buenas prácticas de código y diseño responsivo."
+                />
+
+                <TarjetaSeccion
+                    titulo="Sinergia"
+                    descripcion="Potenciamos nuestras habilidades individuales en cada proyecto grupal."
+                />
             </div>
         </section>
-    )
+    );
 }
 
-export default Metodologias
+export default Metodologias;

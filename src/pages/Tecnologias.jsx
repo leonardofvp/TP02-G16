@@ -1,26 +1,31 @@
-import React from 'react'
+import React from 'react';
+import TarjetaSeccion from '../components/TarjetaSeccion';
+import styles from './Tecnologias.module.css';
 
 function Tecnologias() {
     return (
-        <section id="tecnologias" className="section-main">
+        <section className={styles.seccionTecnologias}>
             <h2>Stack Tecnológico</h2>
-            <p>Para el desarrollo de este proyecto, hemos integrado herramientas modernas que garantizan un flujo de trabajo profesional y eficiente:</p>
-            <div className="proyectos-grid">
-                <article className="tarjeta-item">
-                    <h3>Desarrollo Frontend</h3>
-                    <p>Implementación de maquetado semántico con HTML5, estilos avanzados con CSS3 (Flexbox/Variables) y lógica dinámica con JavaScript puro.</p>
-                </article>
-                <article className="tarjeta-item">
-                    <h3>Asistencia y Optimización</h3>
-                    <p>Uso de Inteligencia Artificial (Gemini Pro y ChatGPT) para la generación de recursos gráficos, optimización de algoritmos y asistencia técnica en la resolución de problemas de maquetado.</p>
-                </article>
-                <article className="tarjeta-item">
-                    <h3>Despliegue y Control</h3>
-                    <p>Gestión de versiones mediante Git/GitHub para el trabajo colaborativo y despliegue continuo a través de la plataforma Vercel.</p>
-                </article>
+            <p>El desarrollo de este proyecto se basa en una arquitectura moderna centrada en componentes y reactividad:</p>
+
+            <div className={styles.contenedorTecnologias}>
+                <TarjetaSeccion
+                    titulo="Ecosistema React"
+                    descripcion="Construcción de interfaces modulares basadas en componentes funcionales, manejo de estado (Hooks) y renderizado eficiente con Vite."
+                />
+
+                <TarjetaSeccion
+                    titulo="Diseño y Estilos"
+                    descripcion="Implementación de interfaces responsivas utilizando CSS Modules para el encapsulamiento de estilos y CSS Flexbox/Grid para layouts avanzados."
+                />
+
+                <TarjetaSeccion
+                    titulo="Desarrollo y Despliegue"
+                    descripcion="Gestión de versiones con Git/GitHub y despliegue automatizado en Vercel, optimizando la experiencia de usuario y el rendimiento del sitio."
+                />
             </div>
         </section>
-    )
+    );
 }
 
-export default Tecnologias
+export default Tecnologias;

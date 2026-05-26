@@ -3,9 +3,10 @@ import styles from './Sidebar.module.css';
 import logoEquipo from '../../../assets/img/logo-equipo.png'
 import BotonEnlace from '../../ui/Botones/BotonEnlace';
 
-function Sidebar() {
+function Sidebar(props) {
+    const clasesSidebar = `${styles.sidebar} ${props.menuAbierto ? styles.activo : ''}`;
     return (
-        <div className={styles.sidebar}>
+        <div className={clasesSidebar}>
             <img src={logoEquipo} alt="Logo del equipo orión" className={styles.logoEquipo} />
             <ul>
                 <li><BotonEnlace destino='/' texto='Inicio'/></li>

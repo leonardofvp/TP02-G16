@@ -1,0 +1,83 @@
+.boton {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 0.2rem solid var(--color-detalle);
+    border-radius: 1rem;
+    height: 5rem;
+
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: var(--color-detalle);
+        transform: scale(1.05);
+    }
+}
+
+.contenedorMenuHamburguesa {
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+
+.menuHamburguesa {
+    height: 1.5em;
+    width: 2.5em;
+    position: relative;
+    cursor: pointer;
+
+    /* Las 3 líneas */
+    .barHam {
+        width: 100%; /* Ocupan el 100% de los 2.5em del padre, no de la pantalla */
+        height: 0.1rem;
+        background-color: var(--color-texto);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform .6s, opacity .8s, top .6s;
+    }
+
+    .barTop { top: 15%; }
+    .barMid { top: 50%; }
+    .barBottom { top: 85%; }
+
+    /* Animación cuando JS le agrega la clase '.activo' */
+    &.activo .barTop {
+        transform: translate(-50%, -50%) rotate(-315deg);
+        top: 50%;
+    }
+
+    &.activo .barMid {
+        opacity: 0;
+    }
+
+    &.activo .barBottom {
+        transform: translate(-50%, -50%) rotate(-225deg);
+        top: 50%;
+    }
+}
+
+
+/* --- BREAKPOINTS --- */
+
+/* Móviles pequeños (400px) */
+@media (min-width: 400px) {
+    .logo-equipo {
+        max-width: 100%;
+    }
+}
+
+/* Tablets (900px) */
+@media (min-width: 900px) {
+    .boton {
+        display: none;
+    }
+}
+
+/* Escritorio (1200px) */
+@media (min-width: 1200px) {
+    .logo-equipo {
+        max-width: 100%;
+    }
+}
+

@@ -1,16 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BotonEnlace from './ui/Botones/BotonEnlace';
+import styles from './TarjetaIntegrante.module.css';
 
-const TarjetaIntegrante = ({ name, avatar, profilePath }) => {
+const TarjetaIntegrante = (props) => {
   return (
-    <article className="tarjeta-item">
-      <div className="avatar-container">
-        <img src={avatar} alt={name} />
-      </div>
-      <h3>{name}</h3>
-      <Link to={profilePath} className="btn-perfil">
-        Ver Perfil
-      </Link>
+    <article className={styles.tarjetaItem}>
+        <div className={styles.avatarContainer}>
+            <img src={props.avatar} alt={props.textoAlternativo} />
+        </div>
+        <h3>{props.nombre}</h3>
+        <BotonEnlace
+            destino={props.destino}
+            texto={props.texto}
+        />
     </article>
   );
 };

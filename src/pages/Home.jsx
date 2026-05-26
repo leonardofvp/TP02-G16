@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Home.module.css'
 
 function Home() {
     return (
-        <section id="presentacion" className="section-main">
+        <section className={styles.home}>
             <h2>Sobre Nosotros</h2>
 				<p>
 					Somos un equipo interdisciplinario de estudiantes de la <strong>Superior en Desarrollo de Software </strong> en el IFTS N.° 29.

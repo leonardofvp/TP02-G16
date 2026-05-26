@@ -1,0 +1,31 @@
+.tarjetaItem  {
+    background-color: var(--color-secundario);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 0.5rem solid transparent;
+    transition: border 0.5s;
+
+    &:hover {
+        border: 0.5rem solid var(--color-detalle);
+    }
+
+    .avatarContainer img {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 0.3rem solid var(--color-detalle);
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tarjetaItem{
+        max-width: 85%;
+    }
+}
