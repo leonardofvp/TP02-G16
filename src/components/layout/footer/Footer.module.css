@@ -1,11 +1,11 @@
 .footer {
-    text-align: center;
-    padding: 1.875rem 1.25rem;
-    background-color: var(--color-secundario);
-    margin-top: 2.5rem;
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 1.875rem 1.25rem;
+  background-color: var(--color-secundario);
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
 
-    div p {
-        margin: 0.5rem 0;
-    }
+  div p {
+    margin: 0.5rem 0;
+  }
 }

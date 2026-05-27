@@ -1,18 +1,18 @@
-    .contenedorApp {
-        display: flex;
-        flex-direction: row;
-        min-height: 100svh;
-        width: 100%;
-    }
+.contenedorApp {
+  display: flex;
+  flex-direction: row;
+  min-height: 100svh;
+  width: 100%;
+}
 
-    .contenedorMain {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
+.contenedorMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-    .contenedorContenido {
-        margin: clamp(2rem, 5vh, 5rem) 1rem;
-        padding: 3.75rem 2.5rem;
-        flex: 1;
-    }
+.contenedorContenido {
+  margin: clamp(2rem, 5vh, 5rem) 1rem;
+  padding: 3.75rem 2.5rem;
+  flex: 1;
+}

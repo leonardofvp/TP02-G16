@@ -1,0 +1,450 @@
+[
+  {
+    "id": "carolina",
+    "nombre": "Carolina Corradi",
+    "edad": "48",
+    "ubicacion": "Buenos Aires, Argentina",
+    "descripcion": "Hola, soy Carolina Corradi, apasionada por el deporte, la tecnología y la educación. Mi objetivo es integrar la inteligencia artificial, la biomecánica y el análisis de datos para mejorar la gestión y el rendimiento deportivo.",
+    "habilidades": {
+      "descripcion": "Estas son algunas de las habilidades que mejor representan mi perfil profesional.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Inteligencia Artificial",
+          "descripcion": "Aplicación de herramientas de IA para educación, deporte, análisis y automatización.",
+          "nivel": 80
+        },
+        {
+          "id": 2,
+          "titulo": "Biomecánica Deportiva",
+          "descripcion": "Análisis del movimiento, evaluación técnica y estudio de variables de rendimiento.",
+          "nivel": 90
+        },
+        {
+          "id": 3,
+          "titulo": "Gestión Deportiva",
+          "descripcion": "Organización de eventos, coordinación de equipos y desarrollo de procesos institucionales.",
+          "nivel": 85
+        },
+        {
+          "id": 4,
+          "titulo": "Análisis de Datos",
+          "descripcion": "Uso de planillas, dashboards y bases de datos para tomar mejores decisiones.",
+          "nivel": 75
+        },
+        {
+          "id": 5,
+          "titulo": "Capacitación",
+          "descripcion": "Diseño de cursos, presentaciones y materiales educativos para diferentes públicos.",
+          "nivel": 95
+        }
+      ]
+    },
+    "peliculas": {
+      "descripcion": "Estas películas me inspiran por sus historias de superación, estrategia, liderazgo y crecimiento personal.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "En busca de la felicidad",
+          "sinopsis": "Una historia sobre esfuerzo, resiliencia y perseverancia. Muestra cómo la constancia puede transformar una situación difícil en una oportunidad de crecimiento."
+        },
+        {
+          "id": 2,
+          "titulo": "Moneyball",
+          "sinopsis": "Una película ideal para quienes aman el deporte y los datos. Refleja cómo el análisis estadístico puede cambiar la forma de tomar decisiones deportivas."
+        },
+        {
+          "id": 3,
+          "titulo": "El juego de la imitación",
+          "sinopsis": "Inspirada en Alan Turing, conecta historia, tecnología e inteligencia artificial. Es una película que invita a valorar la innovación y el pensamiento diferente."
+        }
+      ]
+    },
+    "seccionExtra": {
+      "tituloPrincipal": "Mis 3 Temas Favoritos",
+      "descripcion": "Estos son algunos de los temas que más me interesan y que forman parte de mi trabajo, mis estudios y mis proyectos.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Inteligencia Artificial en el Deporte",
+          "detalles": [
+            { "etiqueta": "Área", "valor": "Tecnología aplicada" },
+            { "etiqueta": "Interés", "valor": "Alto" }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Gimnasia y Alto Rendimiento",
+          "detalles": [
+            { "etiqueta": "Área", "valor": "Deporte" },
+            { "etiqueta": "Interés", "valor": "Profesional" }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Educación y Capacitación Digital",
+          "detalles": [
+            { "etiqueta": "Área", "valor": "Formación" },
+            { "etiqueta": "Interés", "valor": "Permanente" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "gabriela",
+    "nombre": "Melinya Byte",
+    "edad": "WWW",
+    "ubicacion": "Buenos Aires, Argentina",
+    "descripcion": "Soy Melinya. Me considero una persona curiosa y creativa, lo que me llevó a interesarme por el desarrollo web. Disfruto del proceso de transformar una idea en una página funcional. Además de la programación, me interesan el diseño, la ciberseguridad y la tecnología de vanguardia. Mi objetivo como desarrollador es construir sitios web que no solo funcionen bien, sino que también conecten con las personas de manera sencilla y eficiente, haciendo énfasis en la accesibilidad digital.",
+    "habilidades": {
+      "descripcion": "Estas son algunas de mis habilidades.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Modelado y análisis de datos",
+          "descripcion": "Especialización en la estructuración, análisis e interpretación de datos científicos",
+          "nivel": 85
+        },
+        {
+          "id": 2,
+          "titulo": "Auditoría de Resiliencia en Entornos de Tecnología Operativa (OT)",
+          "descripcion": "Evaluación y fortalecimiento de la continuidad operativa de los sistemas de control industrial, aplicando protocolos de ciberseguridad que garantizan la alta disponibilidad de infraestructura estratégica",
+          "nivel": 90
+        },
+        {
+          "id": 3,
+          "titulo": "Desarrollo BackEnd",
+          "descripcion": "Experiencia en el diseño de arquitecturas web utilizando Node.js, Express y Pug",
+          "nivel": 80
+        },
+        {
+          "id": 4,
+          "titulo": "Hardening de Infraestructura",
+          "descripcion": "Configuración de servidores y estaciones de trabajo reduciendo la superficie de ataque",
+          "nivel": 75
+        },
+        {
+          "id": 5,
+          "titulo": "Diseño y optimización de bases de datos",
+          "descripcion": "Estructuración de bases de datos garantizando integridad y rápido acceso a la información",
+          "nivel": 80
+        }
+      ]
+    },
+    "peliculas": {
+      "descripcion": "Estas son mis 3 películas favoritas de todos los tiempos.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Hasta el último hombre",
+          "sinopsis": "No matarás. En los inicios de la Segunda Guerra Mundial, Doss conoce a una joven enfermera, de quien se enamora, prometiéndose ambos una vida juntos. Pero al estallar el conflicto y al enlistarse su hermano en el ejército, decide colaborar como médico, anteponiendo una condición que impone su religión: no tocará un arma, más allá de lo peligroso que esto sea en ese entorno."
+        },
+        {
+          "id": 2,
+          "titulo": "Le Palais Idéal du Facteur Cheval",
+          "sinopsis": "Sur de Francia, año 1879. Ferdinand Cheval es un humilde cartero que sueña despierto con un mundo lleno de hermosos edificios que solo ha visto en las postales que reparte. Durante una de las rondas, conoce a la viuda Filomena y de su unión nace Alice. Cheval adora tanto a su hija que se propone construirle con sus propias manos un increíble palacio"
+        },
+        {
+          "id": 3,
+          "titulo": "In time",
+          "sinopsis": "El hallazgo de una fórmula contra el envejecimiento trae consigo no sólo superpoblación, sino también la transformación del tiempo en moneda de cambio que permite sufragar tanto lujos como necesidades. Los ricos pueden vivir para siempre, pero los demás tendrán que negociar cada minuto de vida. Los pobres mueren jóvenes"
+        }
+      ]
+    },
+    "seccionExtra": {
+      "tituloPrincipal": "Mis 3 Discos Favoritos",
+      "descripcion": "Mis gustos musicales son eclécticos. En lugar de mencionar discos favoritos, prefiero referirme a obras que son de mi agrado",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "L comme Beauté",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Jacques Higelin" },
+            { "etiqueta": "Año", "valor": "1978" }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Miserere meu, Deus",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Gregorio Allegri" },
+            { "etiqueta": "Año", "valor": "1638" }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Trust - Anti Best of",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Trust" },
+            { "etiqueta": "Año", "valor": "1998" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "leandro",
+    "nombre": "Leandro Ferrero",
+    "edad": "40",
+    "ubicacion": "Buenos Aires, Argentina",
+    "descripcion": "Hola, soy Leandro Ferrero, un ex cocinero que, buscando un cambio de rumbo, comenzó a estudiar programación. Pasé por la UTN y realicé cursos en Codo a Codo de QA Testing, Fullstack Python y PHP. También me especialicé en videojuegos (Unity 2D y 3D) en Talento Tech. Actualmente me encuentro en la busqueda de mi primer trabajo en IT. Mi misión es fusionar la disciplina de la alta cocina con la lógica del desarrollo de software.",
+    "habilidades": {
+      "descripcion": "Estas son las herramientas y tecnologías en las que me enfoco para fusionar la lógica con mi experiencia previa.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "C# & .NET",
+          "descripcion": "Desarrollo de aplicaciones robustas y lógica de backend.",
+          "nivel": 85
+        },
+        {
+          "id": 2,
+          "titulo": "Unity 2D/3D",
+          "descripcion": "Creación y programación de videojuegos.",
+          "nivel": 80
+        },
+        {
+          "id": 3,
+          "titulo": "Python & PHP",
+          "descripcion": "Desarrollo fullstack y scripting para soluciones versátiles.",
+          "nivel": 75
+        },
+        {
+          "id": 4,
+          "titulo": "QA Testing",
+          "descripcion": "Aseguramiento de calidad y metodologías de prueba.",
+          "nivel": 75
+        },
+        {
+          "id": 5,
+          "titulo": "Kotlin",
+          "descripcion": "Desarrollo de aplicaciones móviles para Android.",
+          "nivel": 65
+        }
+      ]
+    },
+    "peliculas": {
+      "descripcion": "Estas son mis peliculas preferidas.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "El Señor de los Anillos: La comunidad del anillo",
+          "sinopsis": "Un joven hobbit llamado Frodo Bolsón recibe un anillo con el poder de dominar la Tierra Media. Junto a ocho compañeros de distintas razas, inicia una épica travesía hacia el Monte del Destino para destruir el artefacto y salvar a la Tierra Media de la oscuridad de Sauron."
+        },
+        {
+          "id": 2,
+          "titulo": "El Señor de los Anillos: Las dos Torres",
+          "sinopsis": "Con la Comunidad fragmentada, Frodo y Sam continúan su peligroso camino hacia Mordor guiados por la criatura Gollum. Mientras tanto, Aragorn, Legolas y Gimli se preparan para defender el reino de Rohan en la legendaria batalla del Abismo de Helm contra las hordas de Saruman."
+        },
+        {
+          "id": 3,
+          "titulo": "El Señor de los Anillos: El retorno del rey",
+          "sinopsis": "La batalla final por la Tierra Media comienza. Mientras las fuerzas de Sauron asedian Minas Tirith, Aragorn debe reclamar su trono para liderar a los hombres en una lucha desesperada. Al mismo tiempo, Frodo y Sam alcanzan los fuegos del Monte del Destino para el desenlace de su misión."
+        }
+      ]
+    },
+    "seccionExtra": {
+      "tituloPrincipal": "Mis 3 Discos Favoritos",
+      "descripcion": "Mis 3 Discos Favoritos.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "A tres días de la Tierra",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Eruca Sativa" },
+            { "etiqueta": "Año", "valor": "2025" }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Infections Of A Different Kind – Step 1",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Aurora" },
+            { "etiqueta": "Año", "valor": "2018" }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "TennoConcert (Live)",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Warframe y Matthew Chalmers" },
+            { "etiqueta": "Año", "valor": "2025" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "leonardo",
+    "nombre": "Leonardo Vargas",
+    "edad": "36",
+    "ubicacion": "Buenos Aires, Argentina",
+    "descripcion": "Java/Cobol developer, Estudiante de Técnicatura de Desarrollo de Software, listo para afrontar los desafíos y retos laborales, poseo conocimientos en tecnologías claves como: Cobol, Java y Spring Boot para el diseño de aplicaciones robustas, escalables y seguras. Me Enfoco en la resolución de problemas y la optimización de procesos utilizando mis habilidades técnicas de ingeniería para dar soluciones innovadoras. Apasionado por el aprendizaje continuo y el trabajo en equipo.",
+    "habilidades": {
+      "descripcion": "Estas son algunas de las habilidades que poseo, o al menos las que mejor domino.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "COBOL",
+          "descripcion": "Cuento con conocimientos en desarrollo y mantenimiento de aplicaciones en COBOL, incluyendo el manejo de estructuras de datos, procesamiento de archivos y lógica de negocio en entornos mainframe. Tengo experiencia trabajando con JCL, depuración de programas y aplicación de buenas prácticas para garantizar la eficiencia, estabilidad y confiabilidad de los sistemas.",
+          "nivel": 90
+        },
+        {
+          "id": 2,
+          "titulo": "JAVA",
+          "descripcion": "Cuento con conocimientos en desarrollo con Java, incluyendo programación orientada a objetos (POO), manejo de estructuras de datos y desarrollo de aplicaciones backend. He trabajado con herramientas y frameworks del ecosistema Java, aplicando buenas prácticas de desarrollo, control de versiones y resolución de problemas. Me enfoco en escribir código limpio, mantenible y eficiente.",
+          "nivel": 85
+        },
+        {
+          "id": 3,
+          "titulo": "SPRING BOOT",
+          "descripcion": "Cuento con conocimientos en desarrollo de aplicaciones backend utilizando Spring Boot, enfocado en la creación de APIs REST, manejo de dependencias y configuración automática. Tengo experiencia trabajando con arquitectura en capas, integración con bases de datos y uso de herramientas como control de versiones. Me enfoco en aplicar buenas prácticas para desarrollar soluciones escalables, mantenibles y eficientes.",
+          "nivel": 80
+        },
+        {
+          "id": 4,
+          "titulo": "MYSQL",
+          "descripcion": "Cuento con conocimientos en diseño y administración de bases de datos MySQL, incluyendo la creación de esquemas, consultas SQL y optimización de rendimiento. Tengo experiencia trabajando con herramientas de gestión de bases de datos y aplicando buenas prácticas para garantizar la integridad y seguridad de los datos.",
+          "nivel": 85
+        }
+      ]
+    },
+    "peliculas": {
+      "descripcion": "Estas son mis 3 películas favoritas de todos los tiempos. Tengo la costumbre de verlas al menos una vez por año; si es en su versión extendida, mejor.  ",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Enemigo al asecho",
+          "sinopsis": "Un enemigo oculto acecha al protagonista, generando tensión y miedo constante mientras espera el momento de atacar."
+        },
+        {
+          "id": 2,
+          "titulo": "Matrix",
+          "sinopsis": "Un hacker descubre la realidad simulada y lucha contra máquinas que controlan a la humanidad."
+        },
+        {
+          "id": 3,
+          "titulo": "Tropa de Elite",
+          "sinopsis": "Un grupo policial combate el crimen en favelas, enfrentando corrupción, violencia y decisiones extremas."
+        }
+      ]
+    },
+    "seccionExtra": {
+      "tituloPrincipal": "Mis 3 Discos Favoritos",
+      "descripcion": "Mi gusto en la musica va variando, por lo que me es dificil nombrar 3 discos favoritos, pero estos son los 3 que mas escucho actualmente.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "÷ (Divide)",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Ed Sheeran" },
+            { "etiqueta": "Año", "valor": "2017" }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Divinely Uninspired to a Hellish Extent",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Lewis Capaldi" },
+            { "etiqueta": "Año", "valor": "2019" }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "30",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Adele" },
+            { "etiqueta": "Año", "valor": "2021" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "manuel",
+    "nombre": "Manuel Espíndola",
+    "edad": "26",
+    "ubicacion": "Salta, Argentina",
+    "descripcion": "Además de ser estudiante de la Tecnicatura en desarrollo de Software, soy estudiante de Economía y me interesa combinar esta formación con el área IT. Me atraen especialmente el análisis de datos, la programación y el desarrollo web como herramientas para resolver problemas reales y mejorar la toma de decisiones.",
+    "habilidades": {
+      "descripcion": "Estas son algunas de mis habilidades y herramientas en aprendizaje.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Python",
+          "descripcion": "Uso para análisis de datos, automatización básica y resolución de problemas.",
+          "nivel": 60
+        },
+        {
+          "id": 2,
+          "titulo": "R",
+          "descripcion": "Aplicación en estadística, análisis de datos y trabajos académicos.",
+          "nivel": 70
+        },
+        {
+          "id": 3,
+          "titulo": "HTML y CSS",
+          "descripcion": "En aprendizaje para construir páginas web estructuradas, claras y con estilo.",
+          "nivel": 50
+        },
+        {
+          "id": 4,
+          "titulo": "JavaScript",
+          "descripcion": "En aprendizaje para incorporar interactividad y dinamismo a sitios web.",
+          "nivel": 40
+        }
+      ]
+    },
+    "peliculas": {
+      "descripcion": "Estas son mis películas favoritas.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Pie Pequeño",
+          "sinopsis": "Una película animada sobre la amistad, el descubrimiento y mirar el mundo desde otra perspectiva."
+        },
+        {
+          "id": 2,
+          "titulo": "Los juegos del hambre: Sinsajo Parte 2",
+          "sinopsis": "Una historia de resistencia, valentía y lucha frente a un sistema injusto."
+        },
+        {
+          "id": 3,
+          "titulo": "El señor de los anillos: El retorno del rey",
+          "sinopsis": "Una historia épica sobre amistad, sacrificio y lucha por el destino de la Tierra Media."
+        }
+      ]
+    },
+    "seccionExtra": {
+      "tituloPrincipal": "Mis 3 Discos Favoritos",
+      "descripcion": "Estos son algunos de los discos que más escucho y que forman parte de mis gustos musicales.",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Desde el fin del mundo",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Duki" },
+            { "etiqueta": "Año", "valor": "2021" }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Joytime 2",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Marshmello" },
+            { "etiqueta": "Año", "valor": "2018" }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Donde quiero estar",
+          "detalles": [
+            { "etiqueta": "Artista", "valor": "Quevedo" },
+            { "etiqueta": "Año", "valor": "2023" }
+          ]
+        }
+      ]
+    }
+  }
+]

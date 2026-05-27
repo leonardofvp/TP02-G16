@@ -1,15 +1,14 @@
-/* Vista móvil por defecto (1 sola columna) */
 .equipoGrid {
-    display: grid;
-    gap: 2rem;
-    margin-top: 2rem;
-    grid-template-columns: 1fr;
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 1024px) {
-    .equipoGrid {
-        grid-template-columns: repeat(5, 1fr);
-        max-width: 90%;
-        margin-inline: auto;
-    }
+  .equipoGrid {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 90%;
+    margin-inline: auto;
+  }
 }

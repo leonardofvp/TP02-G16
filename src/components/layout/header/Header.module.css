@@ -1,12 +1,11 @@
 .header {
-    background-color: var(--color-secundario);
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 1.5rem;
-    position: sticky;
-    top: 0;
-    height: 10rem;
-    z-index: 999;
+  background-color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 10rem;
+  z-index: 999;
 }
-

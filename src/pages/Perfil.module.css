@@ -1,4 +1,8 @@
-.contenedorTecnologias {
+.seccionPerfil {
+  margin-bottom: 5rem;
+}
+
+.contenedorTarjetas {
   margin-top: 2rem;
   display: flex;
   gap: 2rem;

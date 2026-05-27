@@ -1,17 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styles from './BotonEnlace.module.css'
-import { Link } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./BotonEnlace.module.css";
+import { Link } from "react-router-dom";
 
-function BotonEnlace(props) {
-    return (
-        <Link to={props.destino} className={styles.boton}> {props.texto} </Link>
-    )
+function BotonEnlace({ destino, texto }) {
+  return (
+    <Link to={destino} className={styles.boton}>
+      {" "}
+      {texto}{" "}
+    </Link>
+  );
 }
 
-BotonEnlace.propTypes = {
-    destino: PropTypes.string.isRequired,
-    texto: PropTypes.string.isRequired
-}
-
-export default BotonEnlace
+export default BotonEnlace;

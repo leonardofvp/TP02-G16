@@ -1,0 +1,40 @@
+.contenedorRedes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--color-secundario);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 0.5rem solid transparent;
+  transition: border 0.5s;
+
+  &:hover {
+    border: 0.5rem solid var(--color-detalle);
+  }
+}
+
+.botonRed {
+  font-size: 5rem;
+  color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.botonRed:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+@media (min-width: 500px) {
+  .contenedorRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,29 @@
+.contenedorBarra {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.encabezadoBarra {
+  margin-top: 2rem;
+}
+
+.rellenoBarra {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 6px;
+  width: var(--progreso);
+  animation: cargarBarra 1.5s ease-out forwards;
+}
+
+@keyframes cargarBarra {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progreso);
+  }
+}

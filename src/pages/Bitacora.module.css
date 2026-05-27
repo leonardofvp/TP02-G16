@@ -1,0 +1,17 @@
+.contenedorBitacora {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contenedorLista {
+  text-align: left;
+  ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+  li {
+    margin-bottom: 0.8rem;
+  }
+}
