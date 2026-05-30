@@ -1,5 +1,14 @@
-.home {
-  background-image: url("../assets/img/orion.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.equipoGrid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1200px) {
+  .equipoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    max-width: 90%;
+    margin-inline: auto;
+  }
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./BotonMenuHamburguesa.module.css";
 
-function BotonHamburguesa(props) {
-  const clasesMenu = `${styles.menuHamburguesa} ${props.menuAbierto ? styles.activo : ""}`;
+function BotonHamburguesa({ toggleMenu, menuAbierto }) {
+  const clasesMenu = `${styles.menuHamburguesa} ${menuAbierto ? styles.activo : ""}`;
   return (
-    <button onClick={props.toggleMenu} className={styles.boton}>
+    <button onClick={toggleMenu} className={styles.boton}>
       <div className={`${clasesMenu}`}>
         <div className={`${styles.barHam} ${styles.barTop}`}></div>
         <div className={`${styles.barHam} ${styles.barMid}`}></div>

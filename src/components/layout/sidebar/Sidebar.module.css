@@ -1,73 +1,73 @@
 .sidebar {
-    position: fixed;
-    top: 10rem;
-    background-color: var(--color-secundario);
+  position: fixed;
+  top: 10rem;
+  background-color: var(--color-secundario);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: left 0.5s ease-in-out;
+  left: -150%;
+  z-index: 999;
+  width: 100svw;
+  height: 100svh;
+  &.activo {
+    left: 0;
+  }
+
+  .logoEquipo {
+    width: 7rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--color-detalle);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transition: left 0.5s ease-in-out;
-    left: -150%;
-    z-index: 999;
-    width: 100svw;
-    height: 100svh;
-    &.activo {
-        left: 0;
-    }
+    gap: 1em;
+    font-family: var(--fuente-texto);
+  }
 
-    .logoEquipo {
-        width: 7rem;
-        border-radius: 50%;
-        border: 0.5rem solid var(--color-principal);
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+  li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        font-family: var(--fuente-texto);
+    a {
+      text-decoration: none;
+      color: var(--color-texto);
     }
-
-    li {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-
-        a {
-            text-decoration: none;
-            color: var(--fuente-texto)
-        }
-    }
+  }
 }
 
 /* Móviles pequeños (400px) */
 @media (min-width: 400px) {
-    .logoEquipo {
-        max-width: 100%;
-    }
+  .logoEquipo {
+    max-width: 100%;
+  }
 }
 
 /* Tablets (900px) */
 @media (min-width: 900px) {
-    .logoEquipo {
-        margin-top: 1rem;
-    }
-    .sidebar {
-        top: 0;
-        position: sticky;
-        width: 15rem;
-    }
+  .logoEquipo {
+    margin-top: 1rem;
+  }
+  .sidebar {
+    top: 0;
+    position: sticky;
+    width: 15rem;
+  }
 }
 
 /* Escritorio (1200px) */
 @media (min-width: 1200px) {
-    .logoEquipo {
-        max-width: 100%;
-    }
+  .logoEquipo {
+    max-width: 100%;
+  }
 }

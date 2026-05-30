@@ -1,0 +1,38 @@
+@keyframes entradaIcono {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translateY(0);
+  }
+}
+
+.contenedorTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.iconoTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: entradaIcono 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.iconoTitulo svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: var(--color-blanco);
+  transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.iconoTitulo svg:hover {
+  transform: scale(1.25) rotate(8deg);
+  color: var(--color-detalle-secundario);
+  filter: drop-shadow(0px 0px 2px var(--color-detalle-secundario));
+  cursor: pointer;
+}

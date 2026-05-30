@@ -12,7 +12,6 @@
 }
 
 .contenedorContenido {
-  margin: clamp(2rem, 5vh, 5rem) 1rem;
   padding: 3.75rem 2.5rem;
   flex: 1;
 }

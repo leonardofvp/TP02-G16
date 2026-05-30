@@ -1,6 +1,6 @@
 import React from "react";
+import TarjetaBasica from "./TarjetaBasica";
 import styles from "./TarjetaPersonal.module.css";
-import RedesSociales from "./TarjetaRedesSociales";
 
 function TarjetaPersonal({
   edad,
@@ -9,26 +9,31 @@ function TarjetaPersonal({
   avatar,
   avatarTextoAlternativo,
 }) {
+  const imagenAvatar = (
+    <img
+      src={avatar}
+      alt={avatarTextoAlternativo}
+      className={styles.imagenAvatar}
+    />
+  );
+
   return (
-    <div className={styles.tarjetaPersonal}>
-      <div>
-        <h3>Sobre mí</h3>
-        <ul>
-          <li>
-            <strong>Edad: </strong>
-            {edad}
-          </li>
-          <li>
-            <strong>Ubicación: </strong>
-            {ubicacion}
-          </li>
-        </ul>
-        <p>{descripcion}</p>
-      </div>
-      <div className={styles.contenedorAvatar}>
-        <img src={avatar} alt={avatarTextoAlternativo} />
-      </div>
-    </div>
+    <TarjetaBasica
+      titulo="Sobre Mi"
+      descripcion={descripcion}
+      elementoGrafico={imagenAvatar}
+    >
+      <ul className={styles.listaDatos}>
+        <li>
+          <strong>Edad: </strong>
+          {edad}
+        </li>
+        <li>
+          <strong>Ubicación: </strong>
+          {ubicacion}
+        </li>
+      </ul>
+    </TarjetaBasica>
   );
 }
 

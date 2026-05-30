@@ -1,6 +1,6 @@
 import React from "react";
-import TarjetaSeccion from "../components/ui/Tarjetas/TarjetaSeccion";
-import styles from "./Bitacora.module.css"
+import TarjetaDesplegable from "../components/ui/Tarjetas/TarjetaDesplegable";
+import styles from "./Bitacora.module.css";
 
 function Bitacora() {
   return (
@@ -13,7 +13,7 @@ function Bitacora() {
       </p>
 
       <div className={styles.contenedorBitacora}>
-        <TarjetaSeccion titulo="Decisiones de diseño tomadas" boton={true}>
+        <TarjetaDesplegable titulo="Decisiones de diseño tomadas" boton={true}>
           <div className={styles.contenedorLista}>
             <ul>
               <li> Migración a Arquitectura React</li>
@@ -81,9 +81,9 @@ function Bitacora() {
               </li>
             </ul>
           </div>
-        </TarjetaSeccion>
+        </TarjetaDesplegable>
 
-        <TarjetaSeccion
+        <TarjetaDesplegable
           titulo="Dificultades encontradas y soluciones"
           boton={true}
         >
@@ -105,9 +105,9 @@ function Bitacora() {
               </li>
             </ul>
           </div>
-        </TarjetaSeccion>
+        </TarjetaDesplegable>
 
-        <TarjetaSeccion titulo="Cambios importantes realizados" boton={true}>
+        <TarjetaDesplegable titulo="Cambios importantes realizados" boton={true}>
           <div className={styles.contenedorLista}>
             <ul>
               <li>
@@ -128,7 +128,7 @@ function Bitacora() {
               </li>
             </ul>
           </div>
-        </TarjetaSeccion>
+        </TarjetaDesplegable>
       </div>
     </section>
   );

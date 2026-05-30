@@ -7,9 +7,7 @@ import styles from "./Layout.module.css";
 
 function Layout() {
   const [menuAbierto, setMenuAbierto] = useState(false);
-
   const toggleMenu = () => {
-    console.log("CLICK");
     setMenuAbierto(!menuAbierto);
   };
 

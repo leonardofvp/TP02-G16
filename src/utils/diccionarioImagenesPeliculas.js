@@ -23,7 +23,7 @@ import piePequeno from "../assets/img/pie-pequeño.webp";
 import juegosDelHambre from "../assets/img/juegos-del-hambre-sinsajo.webp";
 // Nota: Manuel también tiene 'El retorno del rey'
 
-const mapaPeliculas = {
+const diccionarioImagenesPeliculas = {
   carolina: {
     1: felicidad,
     2: moneyball,
@@ -51,4 +51,6 @@ const mapaPeliculas = {
   },
 };
 
-export default mapaPeliculas;
+export const obtenerImagenPelicula = (idIntegrante, idPelicula) => {
+  return diccionarioImagenesPeliculas[idIntegrante.toLowerCase()]?.[idPelicula] || null;
+}

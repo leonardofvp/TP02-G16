@@ -1,30 +1,26 @@
 import React from "react";
+import BotonEnlace from "../components/ui/Botones/BotonEnlace";
+import TarjetaIntegrante from "../components/ui/Tarjetas/TarjetaIntegrante";
 import styles from "./Home.module.css";
+import integrantesData from "../data/IntegrantesData.json";
+import { obtenerAvatar } from "../utils/diccionarioAvatares";
 
 function Home() {
   return (
-    <section className={styles.home}>
-      <h2>Sobre Nosotros</h2>
-      <p>
-        Somos un equipo interdisciplinario de estudiantes de la{" "}
-        <strong>Superior en Desarrollo de Software </strong> en el IFTS N.° 29.
-        Nuestra formación nos permite abordar proyectos desde una perspectiva
-        integral, donde la disciplina técnica se encuentra con la innovación
-        constante.
-      </p>
-      <p>
-        El nombre <strong>Orión</strong> nace de nuestra visión: al igual que la
-        constelación, buscamos ser una referencia clara y organizada en el vasto
-        universo del desarrollo.
-      </p>
-      <p>
-        Este proyecto representa nuestra primera etapa en el mundo del
-        desarrollo web profesional. A través de él, no solo demostramos nuestras
-        habilidades técnicas con <strong>JavaScript, HTML, CSS</strong> y el
-        manejo de herramientas como <strong>Git y Vercel</strong>, sino también
-        nuestra capacidad de trabajo colaborativo, resolución de problemas y
-        compromiso con la calidad del código.
-      </p>
+    <section>
+      <h2>Equipo de Trabajo</h2>
+      <div className={styles.equipoGrid}>
+        {integrantesData.map((integrante) => (
+          <TarjetaIntegrante
+            key={integrante.id}
+            avatar={obtenerAvatar(integrante.id)}
+            avatarTextoAlternativo={integrante.nombre}
+            nombre={integrante.nombre}
+            destino={`/perfil/${integrante.id}`}
+            texto="Ver perfil"
+          />
+        ))}
+      </div>
     </section>
   );
 }

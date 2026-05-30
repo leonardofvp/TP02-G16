@@ -1,0 +1,46 @@
+.tarjetaImagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1.5rem;
+  background-color: var(--color-secundario);
+  border-radius: 1rem;
+  border: 0.5rem solid transparent;
+  transition: border 0.5s;
+}
+
+.tarjetaImagen:hover {
+  border: 0.5rem solid var(--color-detalle);
+}
+
+.detalleTarjeta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 0.1rem solid var(--color-detalle);
+  margin-bottom: 1rem;
+}
+
+.contenedorImagen img {
+  width: 10rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--color-detalle);
+}
+
+.contenedorChildren {
+  margin-top: 1rem;
+}
+
+/* Tablets (900px y más) */
+@media (min-width: 900px) {
+  .tarjetaImagen {
+    flex-direction: row;
+    text-align: left; /* Alinea el texto a la izquierda en escritorio */
+    align-items: flex-start; /* Alinea arriba en escritorio */
+  }
+
+  .contenedorImagen img {
+    width: 14rem;
+  }
+}

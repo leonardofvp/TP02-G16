@@ -1,0 +1,32 @@
+.contenedorNoticias {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.contenedorControles {
+  margin-top: 1rem;
+  display: flex;
+  gap: 5rem;
+  align-self: center;
+  align-items: center;
+
+  span {
+    font-family: var(--fuente-cuerpo);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+.contenedorTarjetaNoticia {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  a {
+    padding-top: 2rem;
+    color: var(--color-texto-secundario);
+    text-decoration: "none";
+    font-weight: "bold";
+  }
+}

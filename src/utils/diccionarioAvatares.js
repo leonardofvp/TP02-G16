@@ -4,7 +4,7 @@ import manuel from "../assets/img/manu.png";
 import gabriela from "../assets/img/melinya-avatar.jpg";
 import leonardo from "../assets/img/leo.png";
 
-const mapaAvatares = {
+const diccionarioAvatares = {
   carolina: caro,
   leandro: leandro,
   manuel: manuel,
@@ -12,4 +12,6 @@ const mapaAvatares = {
   leonardo: leonardo,
 };
 
-export default mapaAvatares;
+export const obtenerAvatar = (idIntegrante) => {
+  return diccionarioAvatares[idIntegrante.toLowerCase()] || null;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetaSeccion from "../components/ui/Tarjetas/TarjetaSeccion";
+import TarjetaBasica from "../components/ui/Tarjetas/TarjetaBasica";
 import styles from "./Metodologias.module.css";
 
 function Metodologias() {
@@ -7,17 +7,17 @@ function Metodologias() {
     <section className={styles.seccionMetodologias}>
       <h2>Cómo trabajamos</h2>
       <div className={styles.contenedorMetodologias}>
-        <TarjetaSeccion
+        <TarjetaBasica
           titulo="Innovación"
           descripcion="Buscamos soluciones creativas a problemas técnicos complejos."
         />
 
-        <TarjetaSeccion
+        <TarjetaBasica
           titulo="Calidad"
           descripcion="Aplicamos buenas prácticas de código y diseño responsivo."
         />
 
-        <TarjetaSeccion
+        <TarjetaBasica
           titulo="Sinergia"
           descripcion="Potenciamos nuestras habilidades individuales en cada proyecto grupal."
         />

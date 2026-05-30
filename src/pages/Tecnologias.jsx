@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetaSeccion from "../components/ui/Tarjetas/TarjetaSeccion";
+import TarjetaBasica from "../components/ui/Tarjetas/TarjetaBasica";
 import styles from "./Tecnologias.module.css";
 
 function Tecnologias() {
@@ -12,17 +12,17 @@ function Tecnologias() {
       </p>
 
       <div className={styles.contenedorTecnologias}>
-        <TarjetaSeccion
+        <TarjetaBasica
           titulo="Ecosistema React"
           descripcion="Construcción de interfaces modulares basadas en componentes funcionales, manejo de estado (Hooks) y renderizado eficiente con Vite."
         />
 
-        <TarjetaSeccion
+        <TarjetaBasica
           titulo="Diseño y Estilos"
           descripcion="Implementación de interfaces responsivas utilizando CSS Modules para el encapsulamiento de estilos y CSS Flexbox/Grid para layouts avanzados."
         />
 
-        <TarjetaSeccion
+        <TarjetaBasica
           titulo="Desarrollo y Despliegue"
           descripcion="Gestión de versiones con Git/GitHub y despliegue automatizado en Vercel, optimizando la experiencia de usuario y el rendimiento del sitio."
         />

@@ -13,7 +13,7 @@
 
 .rellenoBarra {
   height: 100%;
-  background-color: #007bff;
+  background-color: var(--color-detalle-secundario);
   border-radius: 6px;
   width: var(--progreso);
   animation: cargarBarra 1.5s ease-out forwards;

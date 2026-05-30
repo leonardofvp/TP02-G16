@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "titulo": "Clínica SePrise",
+    "descripcion": "Prototipo de sistema médico con flujos de login, registro y control de acceso por roles.",
+    "tecnologias": "React, Node.js, Express",
+    "categoria": "Salud"
+  },
+  {
+    "id": 2,
+    "titulo": "Club Deportivo Orion",
+    "descripcion": "Aplicación móvil para la gestión de membresías, pagos y control de socios.",
+    "tecnologias": "Kotlin, SQLite, Android Studio",
+    "categoria": "Deportes"
+  },
+  {
+    "id": 3,
+    "titulo": "Cimientos Sólidos",
+    "descripcion": "Plataforma web enfocada en arquitectura y construcción, migrada a componentes.",
+    "tecnologias": "React, CSS Modules",
+    "categoria": "Institucional"
+  },
+  {
+    "id": 4,
+    "titulo": "Sistema de Comandas en Tiempo Real",
+    "descripcion": "Plataforma de gestión de pedidos, control de mesas y comunicación directa con cocina.",
+    "tecnologias": "Node.js, Express, React",
+    "categoria": "Gastronomía"
+  },
+  {
+    "id": 5,
+    "titulo": "Gestor de Recetas Culinarias",
+    "descripcion": "Aplicación web para almacenar, escalar porciones y calcular costos de insumos gastronómicos.",
+    "tecnologias": "React, PHP, MySQL",
+    "categoria": "Gastronomía"
+  },
+  {
+    "id": 6,
+    "titulo": "Suite de Testing Automatizado",
+    "descripcion": "Práctica formativa para verificar la lógica de negocio en un sistema de gestión de productos.",
+    "tecnologias": "C#, .NET, NUnit",
+    "categoria": "QA Testing"
+  },
+  {
+    "id": 7,
+    "titulo": "Dashboard de Infraestructura AWS",
+    "descripcion": "Panel de control para monitorear el estado de instancias EC2 y almacenamiento en buckets S3.",
+    "tecnologias": "React, AWS",
+    "categoria": "Cloud Computing"
+  },
+  {
+    "id": 8,
+    "titulo": "Foro 'La Comarca'",
+    "descripcion": "Comunidad online con sistema de hilos y perfiles de usuario.",
+    "tecnologias": "Node.js, Express, MongoDB",
+    "categoria": "Social"
+  },
+  {
+    "id": 9,
+    "titulo": "API REST para Inventarios",
+    "descripcion": "Servidor backend para el control de stock, entradas y salidas de mercadería.",
+    "tecnologias": "Node.js, Express",
+    "categoria": "Backend"
+  },
+  {
+    "id": 10,
+    "titulo": "Buscador del Clima",
+    "descripcion": "Aplicación que consume una API pública para mostrar el pronóstico en tiempo real.",
+    "tecnologias": "JavaScript, Fetch API, CSS",
+    "categoria": "Herramientas"
+  },
+  {
+    "id": 11,
+    "titulo": "Blog de Reseñas de Juegos",
+    "descripcion": "Sitio estático de reseñas enfocado en títulos de rol y plataformas.",
+    "tecnologias": "HTML, CSS Nesting",
+    "categoria": "Contenido"
+  },
+  {
+    "id": 12,
+    "titulo": "Calculadora de IMC",
+    "descripcion": "Herramienta rápida para calcular el Índice de Masa Corporal con indicadores visuales.",
+    "tecnologias": "React",
+    "categoria": "Salud"
+  },
+  {
+    "id": 13,
+    "titulo": "Gestor de Gastos Personales",
+    "descripcion": "Aplicación para trackear ingresos y egresos mensuales con gráficos de barras.",
+    "tecnologias": "JavaScript, Chart.js",
+    "categoria": "Finanzas"
+  },
+  {
+    "id": 14,
+    "titulo": "Generador de Contraseñas",
+    "descripcion": "Script interactivo que genera claves seguras combinando caracteres alfanuméricos y símbolos.",
+    "tecnologias": "React, Vite",
+    "categoria": "Seguridad"
+  },
+  {
+    "id": 15,
+    "titulo": "Lista de Tareas (To-Do App)",
+    "descripcion": "Aplicación clásica para gestionar tareas pendientes, completadas y eliminadas.",
+    "tecnologias": "JavaScript, LocalStorage",
+    "categoria": "Productividad"
+  },
+  {
+    "id": 16,
+    "titulo": "Landing Page para Eventos",
+    "descripcion": "Sitio promocional de una sola página con formulario de contacto y cuenta regresiva.",
+    "tecnologias": "HTML, CSS Flexbox",
+    "categoria": "Marketing"
+  },
+  {
+    "id": 17,
+    "titulo": "Reproductor de Música UI",
+    "descripcion": "Interfaz gráfica de un reproductor de audio con controles de reproducción y barra de progreso.",
+    "tecnologias": "React, CSS Modules",
+    "categoria": "Multimedia"
+  },
+  {
+    "id": 18,
+    "titulo": "Sistema de Votación Online",
+    "descripcion": "Plataforma para crear encuestas y registrar votos en tiempo real.",
+    "tecnologias": "PHP, MySQL",
+    "categoria": "Herramientas"
+  },
+  {
+    "id": 19,
+    "titulo": "Chat en Tiempo Real",
+    "descripcion": "Sala de chat global utilizando WebSockets para la comunicación bidireccional.",
+    "tecnologias": "Node.js, Socket.io",
+    "categoria": "Comunicaciones"
+  },
+  {
+    "id": 20,
+    "titulo": "Convertidor de Unidades",
+    "descripcion": "Herramienta para convertir medidas de longitud, peso y temperatura.",
+    "tecnologias": "JavaScript",
+    "categoria": "Herramientas"
+  }
+]

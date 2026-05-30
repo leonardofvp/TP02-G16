@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import BotonExpandir from "../Botones/BotonBasico";
-import styles from "./TarjetaPelicula.module.css";
+import styles from "./TarjetaDesplegable.module.css";
+import BotonBasico from "../Botones/BotonBasico";
 
-function TarjetaPelicula({ titulo, imagen, sinopsis }) {
+const TarjetaDesplegable = ({ titulo, descripcion, children }) => {
   const [expandido, setExpandido] = useState(false);
 
   const expandir = () => {
@@ -12,20 +12,20 @@ function TarjetaPelicula({ titulo, imagen, sinopsis }) {
   return (
     <article className={styles.tarjetaItem}>
       <h3>{titulo}</h3>
+
       <div
         className={`${styles.detalleTarjeta} ${expandido ? styles.activa : ""}`}
       >
-        <div className={styles.contenedorImagenPelicula}>
-          <img src={imagen} alt={titulo} />
-        </div>
-        <p>{sinopsis}</p>
+        <p>{descripcion}</p>
+        {children}
       </div>
-      <BotonExpandir
+
+      <BotonBasico
         onClick={expandir}
         texto={expandido ? "Ocultar detalles" : "Mostrar detalles"}
       />
     </article>
   );
-}
+};
 
-export default TarjetaPelicula;
+export default TarjetaDesplegable;
