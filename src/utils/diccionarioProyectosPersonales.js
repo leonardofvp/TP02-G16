@@ -6,9 +6,9 @@ import moneyball from "../assets/img/moneyball.webp";
 import imitacion from "../assets/img/imitacion.webp";
 
 // Gabriela
-import doss from "../assets/img/promel1.png"
-import palais from "../assets/img/promel2.png";
-import intime from "../assets/img/promel3.jpg";
+import promel1 from "../assets/img/promel1.png"
+import promel2 from "../assets/img/promel2.png";
+import promel3 from "../assets/img/promel3.jpg";
 
 // Leandro
 import spaceWars from "../assets/img/spacewars.png"
@@ -50,12 +50,12 @@ const diccionarioProyectosPersonales = {
       img: doss
     },
     2: {
-      titulo: "Le Palais Idéal du Facteur Cheval",
+      titulo: "Unit-X",
       descripcion: "Modelado de arquitectura iterativa y desarrollo incremental estructurado de forma unitaria.",
       img: palais
     },
     3: {
-      titulo: "In time",
+      titulo: "Cronos",
       descripcion: "Análisis computacional del tiempo como recurso crítico y optimización de flujos transaccionales.",
       img: intime
     },
