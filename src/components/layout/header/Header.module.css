@@ -9,3 +9,22 @@
   height: 10rem;
   z-index: 999;
 }
+
+.titulos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.separador {
+  color: var(--color-texto-secundario);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.subtituloRuta {
+  font-size: 1.6rem;
+  color: var(--color-texto-secundario);
+  font-weight: 500;
+}

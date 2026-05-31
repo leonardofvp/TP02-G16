@@ -39,10 +39,8 @@ function ExploradorNoticias() {
       } catch (err) {
         setError(err.message);
       } finally {
-        // 2. Activamos la clase CSS de salida
         setDesvaneciendo(true);
 
-        // 3. Retrasamos el desmontaje del componente por 400ms
         setTimeout(() => {
           setCargando(false);
           setDesvaneciendo(false);
