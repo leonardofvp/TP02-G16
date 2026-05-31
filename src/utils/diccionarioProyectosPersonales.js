@@ -6,9 +6,9 @@ import moneyball from "../assets/img/moneyball.webp";
 import imitacion from "../assets/img/imitacion.webp";
 
 // Gabriela
-import doss from "../assets/img/doss.jpg";
-import palais from "../assets/img/palais.jpg";
-import intime from "../assets/img/intime.jpg";
+import doss from "../assets/img/promel1.png";
+import palais from "../assets/img/promel2.png";
+import intime from "../assets/img/promel3.jpg";
 
 // Leandro
 import spaceWars from "../assets/img/spacewars.png"
