@@ -1,0 +1,104 @@
+.grillaGaleria {
+  background-color: var(--color-secundario);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  border: 0.5rem solid transparent;
+  transition: border 0.5s;
+  &:hover {
+    border: 0.5rem solid var(--color-detalle);
+  }
+}
+
+.itemGrilla {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 12.5rem;
+}
+
+.itemGrilla img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.itemGrilla:hover img {
+  transform: scale(1.05);
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+}
+
+.imagenLightbox {
+  grid-row: 2; /* Lo ubica en la fila central gigante */
+  max-width: 50vw;
+  max-height: 50vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btnCerrar {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.875rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.btnNavegacion {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btnNavegacion:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contenedorBotones {
+  grid-row: 1; /* Lo fuerza a ubicarse en la fila superior */
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}

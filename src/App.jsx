@@ -8,6 +8,7 @@ import Metodologias from "./pages/Metodologias";
 import Tecnologias from "./pages/Tecnologias";
 import Proyectos from "./pages/Proyectos";
 import ConsumoApi from "./pages/ConsumoApi";
+import Galeria from "./pages/Galeria";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/tecnologias" element={<Tecnologias />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/api" element={<ConsumoApi />} />
+          <Route path="/galeria" element={<Galeria />} />
         </Route>
       </Routes>
     </BrowserRouter>

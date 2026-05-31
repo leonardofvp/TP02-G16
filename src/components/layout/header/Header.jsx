@@ -13,6 +13,7 @@ function Header({ toggleMenu, menuAbierto }) {
     "/tecnologias": "Tecnologías",
     "/proyectos": "Proyectos",
     "/api": "Consumo de API",
+    "/galeria": "Galeria"
   };
 
   let nombreSeccion = nombresRutas[location.pathname] || "";

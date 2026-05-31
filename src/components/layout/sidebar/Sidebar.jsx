@@ -31,6 +31,9 @@ function Sidebar(props) {
         <li>
           <BotonEnlace destino="/api" texto="Consumo de API" />
         </li>
+        <li>
+          <BotonEnlace destino="/galeria" texto="Galeria" />
+        </li>
       </ul>
     </div>
   );
