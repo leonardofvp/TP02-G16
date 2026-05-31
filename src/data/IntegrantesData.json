@@ -361,88 +361,94 @@
       ]
     }
   },
-  {
-    "id": "manuel",
-    "nombre": "Manuel Espíndola",
-    "edad": "26",
-    "ubicacion": "Salta, Argentina",
-    "descripcion": "Además de ser estudiante de la Tecnicatura en desarrollo de Software, soy estudiante de Economía y me interesa combinar esta formación con el área IT. Me atraen especialmente el análisis de datos, la programación y el desarrollo web como herramientas para resolver problemas reales y mejorar la toma de decisiones.",
-    "habilidades": {
-      "descripcion": "Estas son algunas de mis habilidades y herramientas en aprendizaje.",
-      "items": [
-        {
-          "id": 1,
-          "titulo": "Python",
-          "descripcion": "Uso para análisis de datos, automatización básica y resolución de problemas.",
-          "nivel": 60
-        },
-        {
-          "id": 2,
-          "titulo": "R",
-          "descripcion": "Aplicación en estadística, análisis de datos y trabajos académicos.",
-          "nivel": 70
-        },
-        {
-          "id": 3,
-          "titulo": "HTML y CSS",
-          "descripcion": "En aprendizaje para construir páginas web estructuradas, claras y con estilo.",
-          "nivel": 50
-        },
-        {
-          "id": 4,
-          "titulo": "JavaScript",
-          "descripcion": "En aprendizaje para incorporar interactividad y dinamismo a sitios web.",
-          "nivel": 40
-        }
-      ]
-    },
-    "peliculas": {
-      "descripcion": "Estas son mis películas favoritas.",
-      "items": [
-        {
-          "id": 1,
-          "titulo": "Pie Pequeño",
-          "sinopsis": "Una película animada sobre la amistad, el descubrimiento y mirar el mundo desde otra perspectiva."
-        },
-        {
-          "id": 2,
-          "titulo": "Los juegos del hambre: Sinsajo Parte 2",
-          "sinopsis": "Una historia de resistencia, valentía y lucha frente a un sistema injusto."
-        },
-        {
-          "id": 3,
-          "titulo": "El señor de los anillos: El retorno del rey",
-          "sinopsis": "Una historia épica sobre amistad, sacrificio y lucha por el destino de la Tierra Media."
-        }
-      ]
-    },
-    "seccionExtra": {
-      "tituloPrincipal": "Mis 3 Discos Favoritos",
-      "descripcion": "Estos son algunos de los discos que más escucho y que forman parte de mis gustos musicales.",
-      "items": [
-        {
-          "id": 1,
-          "titulo": "Desde el fin del mundo",
-          "detalles": [
-            { "etiqueta": "Artista", "valor": "Duki" },
-            { "etiqueta": "Año", "valor": "2021" }
-          ]
-        },
-        {
-          "id": 2,
-          "titulo": "Joytime 2",
-          "detalles": [
-            { "etiqueta": "Artista", "valor": "Marshmello" },
-            { "etiqueta": "Año", "valor": "2018" }
-          ]
-        },
-        {
-          "id": 3,
-          "titulo": "Donde quiero estar",
-          "detalles": [
-            { "etiqueta": "Artista", "valor": "Quevedo" },
-            { "etiqueta": "Año", "valor": "2023" }
-          ]
+{
+  "id": "manuel",
+  "nombre": "Manuel Espíndola",
+  "edad": "26",
+  "ubicacion": "Salta, Argentina",
+  "descripcion": "Soy estudiante de la Tecnicatura en Desarrollo de Software y también estudiante de Economía. Me interesa combinar ambas áreas para aplicar la programación, el análisis de datos y el desarrollo web en la resolución de problemas reales y en la mejora de la toma de decisiones.",
+  "habilidades": {
+    "descripcion": "Estas son algunas de mis habilidades y herramientas en aprendizaje.",
+    "items": [
+      {
+        "id": 1,
+        "titulo": "Python",
+        "descripcion": "Uso para análisis de datos, automatización básica y resolución de problemas.",
+        "nivel": 70
+      },
+      {
+        "id": 2,
+        "titulo": "R",
+        "descripcion": "Aplicación en estadística, análisis de datos y trabajos académicos.",
+        "nivel": 75
+      },
+      {
+        "id": 3,
+        "titulo": "HTML y CSS",
+        "descripcion": "En aprendizaje para construir páginas web estructuradas, claras y con estilo.",
+        "nivel": 50
+      },
+      {
+        "id": 4,
+        "titulo": "JavaScript",
+        "descripcion": "En aprendizaje para incorporar interactividad y dinamismo a sitios web.",
+        "nivel": 35
+      },
+      {
+        "id": 5,
+        "titulo": "MySQL",
+        "descripcion": "Conocimientos básicos e intermedios en diseño de bases de datos, creación de tablas, consultas SQL y organización de información.",
+        "nivel": 65
+      }
+    ]
+  },
+  "peliculas": {
+    "descripcion": "Estas son mis películas favoritas.",
+    "items": [
+      {
+        "id": 1,
+        "titulo": "Pie Pequeño",
+        "sinopsis": "Una película animada sobre la amistad, el descubrimiento y mirar el mundo desde otra perspectiva."
+      },
+      {
+        "id": 2,
+        "titulo": "Los juegos del hambre: Sinsajo Parte 2",
+        "sinopsis": "Una historia de resistencia, valentía y lucha frente a un sistema injusto."
+      },
+      {
+        "id": 3,
+        "titulo": "El señor de los anillos: El retorno del rey",
+        "sinopsis": "Una historia épica sobre amistad, sacrificio y lucha por el destino de la Tierra Media."
+      }
+    ]
+  },
+  "seccionExtra": {
+    "tituloPrincipal": "Mis 3 Discos Favoritos",
+    "descripcion": "Estos son algunos de los discos que más escucho y que forman parte de mis gustos musicales.",
+    "items": [
+      {
+        "id": 1,
+        "titulo": "Desde el fin del mundo",
+        "detalles": [
+          { "etiqueta": "Artista", "valor": "Duki" },
+          { "etiqueta": "Año", "valor": "2021" }
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Joytime 2",
+        "detalles": [
+          { "etiqueta": "Artista", "valor": "Marshmello" },
+          { "etiqueta": "Año", "valor": "2018" }
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Donde quiero estar",
+        "detalles": [
+          { "etiqueta": "Artista", "valor": "Quevedo" },
+          { "etiqueta": "Año", "valor": "2023" }
+       ]
         }
       ]
     }

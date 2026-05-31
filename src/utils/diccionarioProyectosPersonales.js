@@ -21,9 +21,9 @@ import matrix from "../assets/img/matrix.jpg";
 import tropa from "../assets/img/tropa.jpg";
 
 // Manuel
-import piePequeno from "../assets/img/pie-pequeño.webp";
-import juegosDelHambre from "../assets/img/juegos-del-hambre-sinsajo.webp";
-import retornoRey from "../assets/img/el-retorno-del-rey.webp";
+import dashboardPyme from "../assets/img/dashboard-pyme.png";
+import ecobudgetPro from "../assets/img/ecobudget-pro.jpg";
+import automatizadorReportes from "../assets/img/automatizador-de-reportes.avif";
 
 const diccionarioProyectosPersonales = {
   carolina: {
@@ -94,21 +94,24 @@ const diccionarioProyectosPersonales = {
       img: tropa
     },
   },
-  manuel: {
+    manuel: {
     1: {
-      titulo: "Pie Pequeño",
-      descripcion: "Gestión de rutas lógicas, resolución de conflictos de navegación y adaptación a entornos de ejecución dinámicos.",
-      img: piePequeno
+      titulo: "Dashboard PyME",
+      descripcion:
+        "Proyecto conceptual de dashboard interactivo para la visualización de ventas, costos e indicadores empresariales.",
+      img: dashboardPyme,
     },
     2: {
-      titulo: "Los juegos del hambre: Sinsajo Parte 2",
-      descripcion: "Despliegue distribuido de nodos de comunicación masiva y manejo de concurrencia bajo fallos sistémicos.",
-      img: juegosDelHambre
+      titulo: "EcoBudget Pro",
+      descripcion:
+        "Prototipo en desarrollo de una aplicación para la gestión y optimización de presupuestos personales.",
+      img: ecobudgetPro,
     },
     3: {
-      titulo: "El retorno del rey",
-      descripcion: "Despliegue final en producción, integración continua y validación exhaustiva de la lógica de negocio.",
-      img: retornoRey
+      titulo: "Automatizador de Reportes",
+      descripcion:
+        "Idea de herramienta para procesar datos y generar informes financieros de forma automática.",
+      img: automatizadorReportes,
     },
   },
 };

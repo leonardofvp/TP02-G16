@@ -62,6 +62,7 @@ const diccionarioIconosHabilidd = {
     2: <SiR />,
     3: <FaHtml5 />,
     4: <FaJs />,
+    5: <SiMysql />,
   },
 };
 
