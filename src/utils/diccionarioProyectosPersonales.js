@@ -6,12 +6,12 @@ import moneyball from "../assets/img/moneyball.webp";
 import imitacion from "../assets/img/imitacion.webp";
 
 // Gabriela
-import promel1 from "../assets/img/promel1.png"
-import promel2 from "../assets/img/promel2.png";
-import promel3 from "../assets/img/promel3.jpg";
+import promel1 from "../assets/img/spacewars.png";
+import promel2 from "../assets/img/escabio-interplanetario.png";
+import promel3 from "../assets/img/configuraciones-manuales.png";
 
 // Leandro
-import spaceWars from "../assets/img/spacewars.png"
+import spaceWars from "../assets/img/spacewars.png";
 import escabioInterplanetario from "../assets/img/escabio-interplanetario.png";
 import configuracionesManuales from "../assets/img/configuraciones-manuales.png";
 
