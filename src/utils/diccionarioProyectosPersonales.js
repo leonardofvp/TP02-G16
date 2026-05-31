@@ -45,19 +45,19 @@ const diccionarioProyectosPersonales = {
   },
   gabriela: {
     1: {
-      titulo: "Hasta el último hombre",
+      titulo: "Vigilus 360",
       descripcion: "Evaluación operativa de protocolos de seguridad y gestión de contingencias bajo escenarios de alta presión.",
-      img: doss
+      img: promel1
     },
     2: {
       titulo: "Unit-X",
       descripcion: "Modelado de arquitectura iterativa y desarrollo incremental estructurado de forma unitaria.",
-      img: palais
+      img: promel2
     },
     3: {
       titulo: "Cronos",
       descripcion: "Análisis computacional del tiempo como recurso crítico y optimización de flujos transaccionales.",
-      img: intime
+      img: promel3
     },
   },
   leandro: {
