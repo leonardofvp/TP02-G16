@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TarjetaBasica from "./TarjetaBasica";
 import styles from "./TarjetaDesplegable.module.css";
 import BotonBasico from "../botones/BotonBasico";
 
@@ -10,9 +11,7 @@ const TarjetaDesplegable = ({ titulo, descripcion, children }) => {
   };
 
   return (
-    <article className={styles.tarjetaItem}>
-      <h3>{titulo}</h3>
-
+    <TarjetaBasica titulo={titulo}>
       <div
         className={`${styles.detalleTarjeta} ${expandido ? styles.activa : ""}`}
       >
@@ -24,7 +23,7 @@ const TarjetaDesplegable = ({ titulo, descripcion, children }) => {
         onClick={expandir}
         texto={expandido ? "Ocultar detalles" : "Mostrar detalles"}
       />
-    </article>
+    </TarjetaBasica>
   );
 };
 

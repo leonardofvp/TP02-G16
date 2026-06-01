@@ -34,18 +34,18 @@ function Bitacora() {
                 (Páginas). Esto eliminó la duplicación de código presente en los
                 archivos HTML originales y centralizó el mantenimiento.
               </li>
+
               <li>
-                <li>
-                  <strong>Carga Dinámica de Datos:</strong> Se creó un archivo
-                  JSON local como fuente de datos de los integrantes. Esto
-                  permite que, al consultar un perfil, React Router capture el
-                  ID desde la URL y cargue la información correspondiente en
-                  tiempo real. De esta manera, se evita generar múltiples
-                  archivos físicos por cada integrante, centralizando el
-                  renderizado en un único componente de página que se hidrata
-                  dinámicamente según corresponda.
-                </li>
+                <strong>Carga Dinámica de Datos:</strong> Se creó un archivo
+                JSON local como fuente de datos de los integrantes. Esto permite
+                que, al consultar un perfil, React Router capture el ID desde la
+                URL y cargue la información correspondiente en tiempo real. De
+                esta manera, se evita generar múltiples archivos físicos por
+                cada integrante, centralizando el renderizado en un único
+                componente de página que se hidrata dinámicamente según
+                corresponda.
               </li>
+
               <li>
                 <strong>Renderizado Dinámico Multi-Entidad:</strong> Para
                 optimizar la presentación de distintas categorías de información

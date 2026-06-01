@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Bitacora from "./pages/Bitacora";
 import Perfil from "./pages/Perfil";
 import Metodologias from "./pages/Metodologias";
-import Tecnologias from "./pages/Tecnologias";
+import ArbolRenderizado from "./pages/ArbolRenderizado";
 import Proyectos from "./pages/Proyectos";
 import ConsumoApi from "./pages/ConsumoApi";
 import Galeria from "./pages/Galeria";
@@ -19,7 +19,7 @@ function App() {
           <Route path="/perfil/:id" element={<Perfil />} />
           <Route path="/bitacora" element={<Bitacora />} />
           <Route path="/metodologias" element={<Metodologias />} />
-          <Route path="/tecnologias" element={<Tecnologias />} />
+          <Route path="/arbol" element={<ArbolRenderizado />} />
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="/api" element={<ConsumoApi />} />
           <Route path="/galeria" element={<Galeria />} />

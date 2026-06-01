@@ -10,7 +10,7 @@ function Header({ toggleMenu, menuAbierto }) {
     "/": "Home",
     "/bitacora": "Bitácora",
     "/metodologias": "Metodologías",
-    "/tecnologias": "Tecnologías",
+    "/arbol": "Árbol de renderizado",
     "/proyectos": "Proyectos",
     "/api": "Consumo de API",
     "/galeria": "Galeria"

@@ -1,0 +1,23 @@
+.contenedorTexto {
+  margin-bottom: 2rem;
+}
+
+.contenedorTarjetaArbol {
+  margin-bottom: 2rem;
+}
+
+.contenedorEsquema {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedorDesglose {
+  li {
+    margin-bottom: 0.8rem;
+  }
+}

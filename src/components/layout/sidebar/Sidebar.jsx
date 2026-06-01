@@ -23,7 +23,7 @@ function Sidebar(props) {
           <BotonEnlace destino="/metodologias" texto="Metodologias" />
         </li>
         <li>
-          <BotonEnlace destino="tecnologias" texto="Tecnologias" />
+          <BotonEnlace destino="/arbol" texto="Árbol" />
         </li>
         <li>
           <BotonEnlace destino="/proyectos" texto="Proyectos" />
