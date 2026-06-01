@@ -7,10 +7,6 @@
 
 .contenedorLista {
   text-align: left;
-  ul {
-    padding-left: 1.5rem;
-    list-style-type: disc;
-  }
   li {
     margin-bottom: 0.8rem;
   }

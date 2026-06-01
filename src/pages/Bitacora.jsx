@@ -1,130 +1,255 @@
 import React from "react";
-import TarjetaDesplegable from "../components/ui/tarjetas/TarjetaDesplegable";
+import TarjetaDesplegable from "../components/ui/Tarjetas/TarjetaDesplegable"; // Ajustá esta ruta si cambiaste el nombre de la carpeta a kebab-case
 import styles from "./Bitacora.module.css";
 
 function Bitacora() {
   return (
-    <section>
-      <h1>Bitácora del Proyecto</h1>
-      <h2>Registro del Proceso de Desarrollo</h2>
+    <section className={styles.contenedorSecundario}>
+      <h2>Bitacora del proyecto</h2>
       <p>
-        Documentación de la evolución, decisiones y resolución de problemas
-        durante la implementación del sitio web del Equipo Orión.
+        Documentación técnica sobre la evolución del proyecto, metodologías
+        ágiles y resolución de problemas durante la migración hacia la
+        arquitectura React.
       </p>
 
       <div className={styles.contenedorBitacora}>
-        <TarjetaDesplegable titulo="Decisiones de diseño tomadas" boton={true}>
+        {/* --- REQUERIMIENTO: JUSTIFICACIÓN DE MIGRACIÓN --- */}
+        <TarjetaDesplegable
+          titulo="1. Justificación de Migración a React"
+          boton={true}
+        >
           <div className={styles.contenedorLista}>
+            <p>
+              El proceso de evolución de la estructura estática a la
+              arquitectura de React se fundamenta en:
+            </p>
+            <br />
             <ul>
-              <li> Migración a Arquitectura React</li>
               <li>
-                <strong>Objetivo:</strong> Migrar la estructura estática del
-                proyecto previo a una arquitectura basada en componentes
-                reutilizables utilizando React, garantizando un comportamiento
-                de Single Page Application (SPA)
+                <strong>Componentización:</strong> Se fragmentó la interfaz en
+                componentes funcionales independientes, estructurándolos
+                jerárquicamente: desde elementos pequeños (botones, barras,
+                inputs y tarjetas), pasando por componentes de Layout (Header,
+                Footer y Sidebar), hasta conformar las vistas principales
+                (Páginas). Esto eliminó la duplicación de código presente en los
+                archivos HTML originales y centralizó el mantenimiento.
               </li>
               <li>
-                <strong>
-                  Modularización y Creación de Componentes Reutilizables:
-                </strong>
+                <li>
+                  <strong>Carga Dinámica de Datos:</strong> Se creó un archivo
+                  JSON local como fuente de datos de los integrantes. Esto
+                  permite que, al consultar un perfil, React Router capture el
+                  ID desde la URL y cargue la información correspondiente en
+                  tiempo real. De esta manera, se evita generar múltiples
+                  archivos físicos por cada integrante, centralizando el
+                  renderizado en un único componente de página que se hidrata
+                  dinámicamente según corresponda.
+                </li>
               </li>
               <li>
-                {" "}
-                Para optimizar el código y cumplir con las buenas prácticas de
-                React, se fragmentó la interfaz original en componentes
-                independientes:
+                <strong>Renderizado Dinámico Multi-Entidad:</strong> Para
+                optimizar la presentación de distintas categorías de información
+                (películas, iconos y proyectos de los integrantes), se
+                implementó el consumo de múltiples archivos <code>.js</code>.
+                Mediante el método <code>map()</code>, los componentes
+                funcionales iteran sobre estas colecciones y renderizan la
+                interfaz de forma automatizada. Esto no solo erradica la
+                maquetación manual repetitiva, sino que sienta las bases para
+                escalar la aplicación de forma ágil y centralizada.
               </li>
               <li>
-                {" "}
-                Navbar.jsx y Footer.jsx: Se aislaron las estructuras globales de
-                navegación y pie de página para que actúen como un Layout fijo
-                en todo el sitio.
+                <strong>Manejo Declarativo del Estado:</strong> Se adoptó el
+                hook <code>useState</code> para las interfaces dinámicas
+                (buscador de datos locales, galería). Esto reemplazó la
+                manipulación imperativa del DOM, delegando las actualizaciones
+                de la UI al Virtual DOM de React.
               </li>
               <li>
-                {" "}
-                MemberCard.jsx: Se creó un componente dinámico para la grilla
-                del equipo.
-              </li>
-              <li>
-                {" "}
-                ProjectCard.jsx: Se modularizó la sección de "Trayectoria del
-                Equipo" para estandarizar la presentación de los proyectos
-                anteriores del grupo (Club Deportivo Orión y Clínica SePrice).
-              </li>
-              <li>
-                <strong>Enfoque y Layout:</strong> Adopción de{" "}
-                <em>Mobile First</em> estructurando el layout principal con
-                Flexbox para responder a los breakpoints exigidos (400px, 900px
-                y 1200px).
-              </li>
-              <li>
-                <strong>Tipografía:</strong> Estandarización con Montserrat y
-                Roboto vía Google Fonts para garantizar consistencia visual.
-              </li>
-              <li>
-                <strong>Arquitectura:</strong> Archivos HTML en la raíz del
-                proyecto y lógica/estilos en directorios separados (
-                <code>/css</code>, <code>/js</code>, <code>/img</code>).
-              </li>
-              <li>
-                <strong>Estética visual:</strong> Uso de tonos azules
-                complementarios al logotipo generado por IA (Gemini Pro),
-                aplicando una hoja de estilos global para lograr coherencia
-                absoluta en la navegación.
-              </li>
-              <li>
-                <strong>Animaciones:</strong> Desplazamiento horizontal para el
-                menú hamburguesa mientras se despliega. Estiramiento y
-                contracción vertical de las tarjetas al interactuar con el botón
-                "Ver detalles" y "Ocultar detalles". Arandamiento del menú, el
-                logo del equipo, las tarjetas y botones al hacer hover.
+                <strong>Single Page Application (SPA):</strong> La integración
+                de React Router eliminó las recargas completas del navegador.
+                Ahora las vistas se montan y desmontan sobre el nodo principal,
+                garantizando transiciones fluidas.
               </li>
             </ul>
           </div>
         </TarjetaDesplegable>
 
+        {/* --- REQUERIMIENTO: FLUJO DE TRABAJO --- */}
         <TarjetaDesplegable
-          titulo="Dificultades encontradas y soluciones"
+          titulo="2. Flujo de Trabajo y Control de Versiones"
           boton={true}
         >
           <div className={styles.contenedorLista}>
             <ul>
               <li>
-                <strong>Problema de alineación:</strong> Al estructurar tarjetas
-                personales con <code>flex-direction: column</code>, los avatares
-                se desfasaban porque usaban un ancho porcentual (
-                <code>width: 50%</code>), calculando su tamaño en base al
-                contenedor en lugar de centrarse.
+                <strong>Gestión de Tareas (Trello / Kanban):</strong> El equipo
+                organizó los requerimientos bajo una metodología ágil. Se
+                definieron las fases de desarrollo: Backlog (requisitos técnicos
+                del TP2), To Do, In Progress (desarrollo de componentes), y
+                Done.
               </li>
               <li>
-                <strong>Solución técnica:</strong> Se modificó el
-                dimensionamiento a unidades relativas estáticas (
-                <code>14rem</code>). Esto permitió que{" "}
-                <code>align-items: center</code> tomara el control absoluto,
-                centrando perfectamente la imagen en cualquier resolución.
+                <strong>Control de Versiones (Flujo Centralizado):</strong>
+                <ul>
+                  <li>
+                    <strong>Rama main exclusiva:</strong> Se optó por una
+                    estrategia de integración continua directa sobre la rama{" "}
+                    <code>main</code>[cite: 54].
+                  </li>
+                  <li>
+                    <strong>Prevención de conflictos:</strong> Esta decisión fue
+                    viable gracias a la estricta modularización de React. Al
+                    encargarse cada integrante de componentes funcionales
+                    aislados, se pudo trabajar modificando archivos distintos
+                    sin generar colisiones severas.
+                  </li>
+                  <li>
+                    <strong>Sincronización:</strong> La ausencia de ramas
+                    secundarias se compensó con comunicación sincrónica del
+                    equipo antes de cada <code>commit</code> y <code>push</code>
+                    , garantizando la estabilidad del entorno de producción.
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
         </TarjetaDesplegable>
 
-        <TarjetaDesplegable titulo="Cambios importantes realizados" boton={true}>
+        {/* --- REQUERIMIENTO: ROLES TÉCNICOS --- */}
+        <TarjetaDesplegable
+          titulo="3. Distribución de Roles Técnicos"
+          boton={true}
+        >
           <div className={styles.contenedorLista}>
             <ul>
               <li>
-                <strong>Problema de usabilidad:</strong> En las vistas
-                individuales se rompía la regla de navegación, obligando al
-                usuario a depender del botón "Atrás" del navegador.
+                <strong>Leandro Ferrero:</strong> Lógica de estado para la
+                Galería Interactiva (Lightbox), navegación cíclica, adaptación
+                de la grilla responsiva, logica de diccionarios y del JSON con
+                los datos de los integrantes para las cargas dinámicas.
               </li>
               <li>
-                <strong>Reestructuración:</strong> Se desarrolló un menú
-                principal (<code>#navbar</code>) que fue replicado globalmente
-                en todos los archivos HTML.
+                <strong>Carolina Corradi:</strong> Arquitectura de enrutamiento
+                (React Router) y maquetado estructural de la Sidebar.
               </li>
               <li>
-                <strong>Ajuste de Scripts:</strong> Se modificó{" "}
-                <code>menu-hamburguesa.js</code> para garantizar que las rutas
-                relativas funcionaran correctamente desde cualquier punto del
-                sitio.
+                <strong>Manuel Espíndola:</strong> Módulo asíncrono para el
+                consumo de la API externa, manejo de los estados de carga y
+                documentación.
+              </li>
+              <li>
+                <strong>Gabriela Gonzalez:</strong> Implementación del
+                explorador de datos (JSON) y algoritmos de filtrado en tiempo
+                real.
+              </li>
+              <li>
+                <strong>Leonardo Vargas:</strong> Maquetado del panel central,
+                diseño de componentes de tarjetas y animaciones CSS de entrada.
+              </li>
+            </ul>
+          </div>
+        </TarjetaDesplegable>
+
+        {/* --- RESOLUCIÓN DE PROBLEMAS TP2 --- */}
+        <TarjetaDesplegable
+          titulo="4. Dificultades Técnicas y Soluciones (React)"
+          boton={true}
+        >
+          <div className={styles.contenedorLista}>
+            <ul>
+              <li>
+                <strong>Renderizado infinito en API:</strong> El llamado
+                asíncrono actualizaba el estado (<code>setNoticias</code>,{" "}
+                <code>setCargando</code>), forzando un nuevo renderizado del
+                componente que volvía a disparar la petición original, creando
+                un ciclo infinito de consultas.
+                <br />
+                <em>Solución:</em> Se encapsuló el <code>fetch</code> dentro de
+                un <code>useEffect</code> declarando explícitamente a{" "}
+                <code>[paginaActual]</code> como su única dependencia. De esta
+                forma, la API se consume exclusivamente durante el montaje
+                inicial y cada vez que el usuario interactúa con la paginación,
+                aislando la lógica asíncrona de las actualizaciones de la
+                interfaz.
+              </li>
+
+              <li>
+                <strong>Responsividad del Carrusel:</strong> El contenedor y sus
+                imágenes internas desbordaban el ancho de la vista en
+                resoluciones móviles, rompiendo el layout general de la
+                aplicación.
+                <br />
+                <em>Solución:</em> Se aplicó una estrategia Mobile First
+                definiendo un <code>max-width: 100vw</code> junto con{" "}
+                <code>overflow: hidden</code> y{" "}
+                <code>box-sizing: border-box</code> para cortar de raíz el
+                desbordamiento horizontal. Posteriormente, se escalaron
+                progresivamente los anchos máximos del contenedor (desde{" "}
+                <code>18rem</code> hasta <code>50rem</code>) y de las imágenes
+                utilizando Media Queries para los breakpoints de 900px y 1200px.
+              </li>
+              <li>
+                <strong>Controles de navegación del Carrusel:</strong> Los
+                botones por defecto del carrusel desconfiguraban el layout y
+                generaban problemas de visualización en pantallas pequeñas al
+                superponerse con el contenido.
+                <br />
+                <em>Solución:</em> Se anularon los controles por defecto y se
+                reemplazaron reutilizando el componente propio{" "}
+                <code>&lt;BotonBasico&gt;</code>. Para optimizar el espacio en
+                dispositivos móviles, los controles se extrajeron del flujo de
+                la imagen y se reubicaron en la parte superior mediante un
+                contenedor flexible (<code>display: flex</code>).
+              </li>
+              <li>
+                <strong>Bloqueo de scroll en Lightbox:</strong> El modal (
+                <code>position: fixed</code>) impedía desplazar imágenes altas
+                en pantallas móviles.
+                <br />
+                <em>Solución:</em> Aplicación de <code>overflow-y: auto</code>{" "}
+                en el contenedor principal del modal.
+              </li>
+              <li>
+                <strong>Filtrado estricto en JSON:</strong> El buscador fallaba
+                ante diferencias de mayúsculas/minúsculas.
+                <br />
+                <em>Solución:</em> Normalización de los strings con{" "}
+                <code>toLowerCase()</code> antes de evaluar la coincidencia con{" "}
+                <code>includes()</code>.
+              </li>
+              <li>
+                <strong>Desafío de alineación:</strong> Las tarjetas iniciales
+                presentaban desfases en los avatares por el uso de anchos
+                porcentuales.
+                <br />
+                <em>Solución:</em> Se solucionó reemplazándolos por unidades
+                relativas estáticas (<code>14rem</code>) permitiendo que{" "}
+              </li>
+            </ul>
+          </div>
+        </TarjetaDesplegable>
+
+        {/* --- REGISTRO HISTÓRICO TP1 --- */}
+        <TarjetaDesplegable
+          titulo="5. Registro Histórico: Maquetado Estático TP1"
+          boton={true}
+        >
+          <div className={styles.contenedorLista}>
+            <p>
+              Decisiones base establecidas previo a la migración de la
+              arquitectura:
+            </p>
+            <br />
+            <ul>
+              <li>
+                <strong>Layout Original:</strong> Adopción de un enfoque Mobile
+                First utilizando Flexbox para abarcar los breakpoints
+                estipulados.
+              </li>
+              <li>
+                <strong>Estética visual:</strong> Paleta en tonos azules,
+                tipografías Montserrat y Roboto, y logotipo base generado por
+                IA.
               </li>
             </ul>
           </div>
