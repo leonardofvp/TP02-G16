@@ -474,7 +474,7 @@ Archivo de datos utilizado para renderizar la información de proyectos dentro d
 
 ## Capturas de Pantalla
 
-A continuación se presentan capturas de las principales secciones del proyecto desplegado y algunas funcionalidades interactivas.
+A continuación se presentan capturas de las principales secciones del proyecto desplegado y algunas funcionalidades interactivas:
 
 ### Home / Dashboard principal
 
