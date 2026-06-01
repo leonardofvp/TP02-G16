@@ -386,28 +386,27 @@ Archivo de datos utilizado para renderizar la información de proyectos dentro d
 
 ### Home / Dashboard principal
 
-![Home](src/assets/img/capturas/home.png)
+<img src="src/assets/img/capturas/home.png" alt="Home / Dashboard principal" width="700">
 
 ### Perfil individual
 
-![Perfil individual](src/assets/img/capturas/perfil.png)
+<img src="src/assets/img/capturas/perfil.png" alt="Perfil individual" width="700">
 
 ### Explorador de proyectos
 
-![Proyectos](src/assets/img/capturas/proyectos.png)
+<img src="src/assets/img/capturas/proyectos.png" alt="Explorador de proyectos" width="700">
 
 ### Galería
 
-![Galería](src/assets/img/capturas/galeria.png)
+<img src="src/assets/img/capturas/galeria.png" alt="Galería" width="700">
 
 ### Consumo de API externa
 
-![API](src/assets/img/capturas/api.png)
+<img src="src/assets/img/capturas/api.png" alt="Consumo de API externa" width="700">
 
 ### Bitácora
 
-![Bitácora](src/assets/img/capturas/bitacora.png)
-
+<img src="src/assets/img/capturas/bitacora.png" alt="Bitácora" width="700">
 ---
 
 ## Evolución del Proyecto
