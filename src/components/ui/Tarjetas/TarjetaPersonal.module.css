@@ -4,7 +4,7 @@
   border: 0.3rem solid var(--color-detalle);
 }
 
-ul {
+.listaDatos {
   list-style: none;
   margin-bottom: 1rem;
   color: var(--color-texto-secundario);
