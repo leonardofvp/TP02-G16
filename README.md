@@ -304,30 +304,30 @@ La aplicación parte desde el componente raíz `App.jsx`, donde se configuran la
            └── [Footer.jsx]
 ```
 
-[x] App.jsx: componente raíz de la aplicación.
-[x] Layout: estructura general que contiene navegación y contenido.
-[x] Sidebar: menú lateral fijo.
-[x] BotonEnlace: componente para los enlaces de navegación.
-[x] BotonHamburguesa: control para desplegar el menú en móviles.
-[x] Header: encabezado del layout.
-[x] Outlet: espacio donde se renderizan las páginas internas según la ruta.
-[x] Home: página principal.
-[x] TarjetaIntegrante: componente para mostrar el resumen de cada miembro en el Home.
-[x] Perfil: página individual de cada integrante.
-[x] TarjetaPersonal: componente con los datos personales del integrante.
-[x] TarjetaHabilidad: componente para listar las competencias técnicas/blandas.
-[x] BarraProgreso: componente visual para representar el nivel de habilidades.
-[x] CarruselProyectos: componente reutilizable para mostrar proyectos.
-[x] TarjetaPelicula: componente para mostrar las películas favoritas.
-[x] TarjetaRedesSociales: componente con los enlaces de contacto.
-[x] BotonBasico: componente de interfaz reutilizable para disparar acciones.
-[x] Bitacora: vista del registro de actividades.
-[x] Metodologias: vista explicativa sobre la metodología de trabajo.
-[x] ArbolRenderizado: vista con el árbol de renderizado.
-[x] Proyectos: vista general con el explorador de todos los proyectos.
-[x] Galeria: vista ampliada de imágenes.
-[x] ConsumoApi: vista dedicada a la demostración de peticiones asíncronas.
-[x] Footer: pie de página común del proyecto.
+- [x] App.jsx: componente raíz de la aplicación.
+- [x] Layout: estructura general que contiene navegación y contenido.
+- [x] Sidebar: menú lateral fijo.
+- [x] BotonEnlace: componente para los enlaces de navegación.
+- [x] BotonHamburguesa: control para desplegar el menú en móviles.
+- [x] Header: encabezado del layout.
+- [x] Outlet: espacio donde se renderizan las páginas internas según la ruta.
+- [x] Home: página principal.
+- [x] TarjetaIntegrante: componente para mostrar el resumen de cada miembro en el Home.
+- [x] Perfil: página individual de cada integrante.
+- [x] TarjetaPersonal: componente con los datos personales del integrante.
+- [x] TarjetaHabilidad: componente para listar las competencias técnicas/blandas.
+- [x] BarraProgreso: componente visual para representar el nivel de habilidades.
+- [x] CarruselProyectos: componente reutilizable para mostrar proyectos.
+- [x] TarjetaPelicula: componente para mostrar las películas favoritas.
+- [x] TarjetaRedesSociales: componente con los enlaces de contacto.
+- [x] BotonBasico: componente de interfaz reutilizable para disparar acciones.
+- [x] Bitacora: vista del registro de actividades.
+- [x] Metodologias: vista explicativa sobre la metodología de trabajo.
+- [x] ArbolRenderizado: vista con el árbol de renderizado.
+- [x] Proyectos: vista general con el explorador de todos los proyectos.
+- [x] Galeria: vista ampliada de imágenes.
+- [x] ConsumoApi: vista dedicada a la demostración de peticiones asíncronas.
+- [x] Footer: pie de página común del proyecto.
 
 ---
 
@@ -416,7 +416,7 @@ Archivo de datos utilizado para renderizar la información de proyectos dentro d
 
 ## Capturas de Pantalla
 
-A continuación se presentan capturas de las principales secciones del proyecto desplegado.
+A continuación se presentan capturas de las principales secciones del proyecto desplegado y algunas funcionalidades interactivas.
 
 ### Home / Dashboard principal
 
