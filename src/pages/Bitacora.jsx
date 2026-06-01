@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetaDesplegable from "../components/ui/tarjetas/TarjetaDesplegable"; // Ajustá esta ruta si cambiaste el nombre de la carpeta a kebab-case
+import TarjetaDesplegable from "../components/ui/tarjetas/TarjetaDesplegable";
 import styles from "./Bitacora.module.css";
 
 function Bitacora() {
