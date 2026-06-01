@@ -9,7 +9,7 @@
   left: -150%;
   z-index: 999;
   width: 100svw;
-  min-height: 100svh;
+  height: 100svh;
   &.activo {
     left: 0;
   }
