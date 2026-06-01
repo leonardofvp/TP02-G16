@@ -5,7 +5,7 @@
   white-space: nowrap;
 
   color: var(--color-texto);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem;
 
   border: 0.2rem solid var(--color-detalle);
   border-radius: 1rem;
