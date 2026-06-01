@@ -220,9 +220,9 @@ Proyectos incorporados en el perfil de Manuel:
 ### Explorador de proyectos
 
 - [x] La sección de proyectos renderiza información de manera dinámica.
-- [x] Se utiliza un archivo JSON con objetos de datos.
+- [x] `proyectos.json` contiene 20 objetos utilizados para el renderizado dinámico.
 - [x] La vista permite explorar proyectos y tecnologías asociadas.
-- [ ] Pendiente de implementación: búsqueda y filtrado en tiempo real por texto.
+- [x] Búsqueda y filtrado en tiempo real por título, tecnología o categoría.
 
 ---
 
@@ -241,7 +241,7 @@ Proyectos incorporados en el perfil de Manuel:
 - [x] Se incorporó una página de galería mediante `Galeria.jsx`.
 - [x] Las imágenes utilizadas se encuentran organizadas dentro de `src/assets/img`.
 - [x] La sección permite mostrar recursos visuales del proyecto en formato visual.
-- [ ] Pendiente de implementación: lightbox con zoom, navegación interna y cierre mediante tecla ESC.
+- [x] Lightbox con ampliación visual, navegación interna y cierre mediante tecla ESC.
 
 ---
 
@@ -513,7 +513,7 @@ https://tp-02-g16.vercel.app/
 ## Pendientes para completar
 
 - [ ] Incorporar capturas reales del proyecto en el README.
-- [ ] Confirmar que `proyectos.json` contenga 20 objetos.
-- [ ] Implementar o revisar búsqueda y filtrado en tiempo real en la sección de proyectos.
+
+- [x] Búsqueda y filtrado en tiempo real por título, tecnología o categoría.
 - [ ] Implementar o revisar lightbox de galería con zoom, navegación interna y cierre con tecla ESC.
 - [ ] Revisar que el deploy de Vercel refleje la última versión del repositorio.
