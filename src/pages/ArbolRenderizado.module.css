@@ -4,20 +4,53 @@
 
 .contenedorTarjetaArbol {
   margin-bottom: 2rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .contenedorEsquema {
   background-color: #1e1e1e;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
   border: 1px solid #333;
-  overflow-x: auto;
   margin-bottom: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 70svw;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.codigoArbol {
+  font-family: "Consolas", "Monaco", monospace;
+  white-space: pre;
+  margin: 0;
+  color: var(--color-texto);
+  display: block;
+  width: max-content;
+  font-size: 0.6rem;
 }
 
 .contenedorDesglose {
   li {
     margin-bottom: 0.8rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .contenedorEsquema {
+    padding: 1.5rem;
+    max-width: 60svw;
+  }
+
+  .codigoArbol {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .codigoArbol {
+    font-size: 1rem;
   }
 }
