@@ -208,12 +208,6 @@ Ejemplo de habilidades incluidas en un perfil:
 - [x] Se utilizan imágenes en formato 16:9 para mantener coherencia visual.
 - [x] Los proyectos se obtienen desde `diccionarioProyectosPersonales.js`.
 
-Proyectos incorporados en el perfil de Manuel:
-
-- Dashboard PyME
-- EcoBudget Pro
-- Automatizador de Reportes
-
 ---
 
 ### Renderizado dinámico de datos locales
