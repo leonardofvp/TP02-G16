@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetaDesplegable from "../components/ui/tarjetas_temp/TarjetaDesplegable";
+import TarjetaDesplegable from "../components/ui/tarjetas/TarjetaDesplegable";
 import styles from "./Bitacora.module.css";
 
 function Bitacora() {

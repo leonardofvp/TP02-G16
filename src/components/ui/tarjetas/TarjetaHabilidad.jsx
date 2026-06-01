@@ -1,7 +1,7 @@
 import React from "react";
 import TarjetaBasica from "./TarjetaBasica";
 import styles from "./TarjetaHabilidad.module.css";
-import BarraProgreso from "../barras_temp/BarraProgreso";
+import BarraProgreso from "../barras/BarraProgreso";
 
 function TarjetaPersonal({ titulo, descripcion, nivel, icono }) {
   const tituloConIcono = (

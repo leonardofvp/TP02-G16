@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BotonEnlace from "../botones_temp/BotonEnlace";
+import BotonEnlace from "../botones/BotonEnlace";
 import styles from "./TarjetaIntegrante.module.css";
 
 const TarjetaIntegrante = ({

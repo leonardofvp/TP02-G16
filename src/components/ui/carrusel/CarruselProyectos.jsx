@@ -1,6 +1,6 @@
 import React, { useRef } from "react"; // Importamos useRef
 import ReactSlick from "react-slick";
-import BotonBasico from "../botones_temp/BotonBasico";
+import BotonBasico from "../botones/BotonBasico";
 import styles from "./CarruselProyectos.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetaBasica from "../components/ui/tarjetas_temp/TarjetaBasica";
+import TarjetaBasica from "../components/ui/tarjetas/TarjetaBasica";
 import styles from "./Metodologias.module.css";
 
 function Metodologias() {
