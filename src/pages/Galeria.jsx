@@ -1,34 +1,25 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Galeria.module.css";
 import BotonBasico from "../components/ui/botones/BotonBasico";
+import { obtenerTodosLosProyectos } from "../utils/diccionarioProyectosPersonales";
 
 function Galeria() {
-  // Array de imágenes de prueba. Podés cambiarlas por imágenes de tus proyectos.
-  const imagenes = [
-    "https://picsum.photos/id/10/800/600",
-    "https://picsum.photos/id/11/800/600",
-    "https://picsum.photos/id/12/800/600",
-    "https://picsum.photos/id/13/800/600",
-    "https://picsum.photos/id/14/800/600",
-    "https://picsum.photos/id/15/800/600",
-  ];
-
+  const proyectos = obtenerTodosLosProyectos();
   const [indiceActivo, setIndiceActivo] = useState(null);
-
   const abrirLightbox = (index) => setIndiceActivo(index);
   const cerrarLightbox = () => setIndiceActivo(null);
 
   const imagenSiguiente = (e) => {
     e.stopPropagation();
     setIndiceActivo((prevIndice) =>
-      prevIndice === imagenes.length - 1 ? 0 : prevIndice + 1,
+      prevIndice === proyectos.length - 1 ? 0 : prevIndice + 1,
     );
   };
 
   const imagenAnterior = (e) => {
     e.stopPropagation();
     setIndiceActivo((prevIndice) =>
-      prevIndice === 0 ? imagenes.length - 1 : prevIndice - 1,
+      prevIndice === 0 ? proyectos.length - 1 : prevIndice - 1,
     );
   };
 
@@ -55,16 +46,18 @@ function Galeria() {
   return (
     <section className={styles.seccionGaleria}>
       <h2>Galeria de imagenes</h2>
-      <p>Estas son las imagenes de los proyectos individuales de los integrantes para que se visualicen mejor</p>
+      <p>
+        Estas son las imagenes de los proyectos individuales de los integrantes para mejor visualización.
+      </p>
       <div className={styles.grillaGaleria}>
-        {imagenes.map((url, index) => (
+        {proyectos.map((proyecto, index) => (
           <div
             key={index}
             className={styles.itemGrilla}
             onClick={() => abrirLightbox(index)}
           >
             <img
-              src={url}
+              src={proyecto.img}
               alt={`Imagen de galería ${index + 1}`}
               loading="lazy"
             />
@@ -82,10 +75,12 @@ function Galeria() {
 
             <BotonBasico texto="&#10095;" onClick={imagenSiguiente} />
           </div>
-
+          <div>
+            <h3>{proyectos[indiceActivo].titulo}</h3>
+          </div>
           <img
-            src={imagenes[indiceActivo]}
-            alt="Imagen ampliada"
+            src={proyectos[indiceActivo].img}
+            alt={proyectos[indiceActivo].titulo}
             className={styles.imagenLightbox}
             onClick={(e) => e.stopPropagation()}
           />

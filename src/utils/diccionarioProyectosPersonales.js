@@ -119,3 +119,9 @@ const diccionarioProyectosPersonales = {
 export const obtenerProyectosPersonales = (idIntegrante) => {
   return diccionarioProyectosPersonales[idIntegrante.toLowerCase()] || null;
 }
+
+export const obtenerTodosLosProyectos = () => {
+  return Object.values(diccionarioProyectosPersonales).flatMap((proyectosIntegrante) =>
+    Object.values(proyectosIntegrante)
+  );
+};
