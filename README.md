@@ -191,7 +191,7 @@ Cada integrante cuenta con una página individual que funciona como perfil profe
 - [x] Se utilizan barras visuales para representar el nivel de cada herramienta o tecnología.
 - [x] Se incorporan íconos representativos mediante `diccionarioIconosHabilidades`.
 
-Ejemplo de habilidades incluidas en el perfil de Manuel:
+Ejemplo de habilidades incluidas en un perfil:
 
 - Python
 - R
@@ -522,14 +522,9 @@ https://tp-02-g16.vercel.app/
 - [x] Perfiles individuales implementados.
 - [x] Carrusel de proyectos incorporado.
 - [x] Datos organizados en archivos JSON.
+- [x] Archivo `proyectos.json` con 20 objetos.
+- [x] Búsqueda y filtrado en tiempo real implementados en la sección de proyectos.
+- [x] Galería con lightbox, navegación interna y cierre mediante tecla ESC.
+- [x] Capturas incorporadas al README.
 - [x] Proyecto publicado en Vercel.
 - [x] README actualizado.
-- [ ] Pendiente para completar mañana: capturas definitivas, búsqueda/filtro en tiempo real y lightbox completo de galería.
-
-## Pendientes para completar
-
-- [ ] Incorporar capturas reales del proyecto en el README.
-
-- [x] Búsqueda y filtrado en tiempo real por título, tecnología o categoría.
-- [ ] Implementar o revisar lightbox de galería con zoom, navegación interna y cierre con tecla ESC.
-- [ ] Revisar que el deploy de Vercel refleje la última versión del repositorio.
