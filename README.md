@@ -204,8 +204,6 @@ TP02-G16/
 - [x] Archivo `main.jsx` como punto de entrada de React.
 - [x] Carpeta `assets/img/capturas` para las capturas utilizadas en el README.
 
-> Nota: la carpeta `Imput` conserva el nombre actual del proyecto para evitar modificar rutas o imports existentes.
-
 ---
 
 ## Funcionalidades Principales
