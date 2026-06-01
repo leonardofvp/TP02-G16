@@ -73,6 +73,13 @@ TP02-G16/
 │   │
 │   ├── assets/
 │   │   └── img/
+│   │       ├── capturas/
+│   │       │   ├── home.png
+│   │       │   ├── perfil.png
+│   │       │   ├── proyectos.png
+│   │       │   ├── galeria.png
+│   │       │   ├── api.png
+│   │       │   └── bitacora.png
 │   │       ├── logo-equipo.png
 │   │       ├── orion.png
 │   │       ├── avatares de integrantes
@@ -135,6 +142,7 @@ TP02-G16/
 - [x] Carpeta `utils` para diccionarios y funciones auxiliares.
 - [x] Archivo `App.jsx` para la configuración principal de rutas.
 - [x] Archivo `main.jsx` como punto de entrada de React.
+- [x] Carpeta `assets/img/capturas` para las capturas utilizadas en el README.
 
 > Nota: la carpeta `Imput` conserva el nombre actual del proyecto para evitar modificar rutas o imports existentes.
 
@@ -382,21 +390,29 @@ Archivo de datos utilizado para renderizar la información de proyectos dentro d
 
 ## Capturas de Pantalla
 
-Las capturas de pantalla se incorporarán en la carpeta `src/assets/img/capturas/` para documentar visualmente el avance del proyecto y sus principales secciones.
+### Home / Dashboard principal
 
-Secciones previstas para documentar:
+![Home](src/assets/img/capturas/home.png)
 
-- Home / Dashboard principal
-- Sidebar de navegación
-- Perfil individual de integrantes
-- Barras de progreso de habilidades
-- Carrusel de proyectos
-- Explorador de proyectos
-- Consumo de API externa
-- Galería
-- Bitácora
+### Perfil individual
 
-> Nota: esta sección queda prevista para la incorporación de capturas finales del proyecto una vez confirmada la versión definitiva del deploy.
+![Perfil individual](src/assets/img/capturas/perfil.png)
+
+### Explorador de proyectos
+
+![Proyectos](src/assets/img/capturas/proyectos.png)
+
+### Galería
+
+![Galería](src/assets/img/capturas/galeria.png)
+
+### Consumo de API externa
+
+![API](src/assets/img/capturas/api.png)
+
+### Bitácora
+
+![Bitácora](src/assets/img/capturas/bitacora.png)
 
 ---
 
