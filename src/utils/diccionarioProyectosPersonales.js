@@ -16,9 +16,9 @@ import escabioInterplanetario from "../assets/img/escabio-interplanetario.png";
 import configuracionesManuales from "../assets/img/configuraciones-manuales.png";
 
 // Leonardo
-import enemigo from "../assets/img/enemigo.jpg";
-import matrix from "../assets/img/matrix.jpg";
-import tropa from "../assets/img/tropa.jpg";
+import estereos from "../assets/img/estereosenlanube.png";
+import learn from "../assets/img/learnwithme.png";
+import reparame from "../assets/img/reparame.png";
 
 // Manuel
 import dashboardPyme from "../assets/img/dashboard-pyme.png";
@@ -79,19 +79,19 @@ const diccionarioProyectosPersonales = {
   },
   leonardo: {
     1: {
-      titulo: "Enemigo al acecho",
-      descripcion: "Optimización de consultas de alta precisión y análisis predictivo de rendimiento en servidores aislados.",
-      img: enemigo
+      titulo: "EnemEstereos en la nube",
+      descripcion: "Nuestra Web Stereosenlanube ofrece una plataforma integral a músicos independientes promocionar su música y eventos, abordando la creciente necesidad de conectar los nuevos talentos a una audiencia más global.",
+      img: estereos
     },
     2: {
-      titulo: "Matrix",
-      descripcion: "Modelado de entornos lógicos virtuales y abstracción de capas para el control de flujos de ejecución.",
-      img: matrix
+      titulo: "learn-with-me",
+      descripcion: "Es una plataforma de estudio web donde podrás aprender tecnologías clave que están siendo muy demandadas en la actualidad",
+      img: learn
     },
     3: {
-      titulo: "Tropa de élite",
-      descripcion: "Implementación de auditorías estrictas de hardening y ejecución de scripts de seguridad en sistemas operativos.",
-      img: tropa
+      titulo: "ReparameApp",
+      descripcion: "Reparame es una aplicación que conecta a prestadores de servicios confiables con clientes en tiempo real, ofreciendo soluciones rápidas a problemas del hogar.",
+      img: reparame
     },
   },
     manuel: {
