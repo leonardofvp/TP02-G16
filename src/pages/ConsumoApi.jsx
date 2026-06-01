@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import BotonBasico from "../components/ui/Botones/BotonBasico";
-import TarjetaBasica from "../components/ui/Tarjetas/TarjetaBasica";
+import BotonBasico from "../components/ui/botones_temp/BotonBasico";
+import TarjetaBasica from "../components/ui/tarjetas_temp/TarjetaBasica";
 import styles from "./ConsumoApi.module.css";
 
 function ExploradorNoticias() {

@@ -1,6 +1,6 @@
 import React from "react";
-import BotonEnlace from "../components/ui/Botones/BotonEnlace";
-import TarjetaIntegrante from "../components/ui/Tarjetas/TarjetaIntegrante";
+import BotonEnlace from "../components/ui/botones_temp/BotonEnlace";
+import TarjetaIntegrante from "../components/ui/tarjetas_temp/TarjetaIntegrante";
 import styles from "./Home.module.css";
 import integrantesData from "../data/IntegrantesData.json";
 import { obtenerAvatar } from "../utils/diccionarioAvatares";

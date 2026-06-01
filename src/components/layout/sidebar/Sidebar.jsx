@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
 import logoEquipo from "../../../assets/img/logo-equipo.png";
-import BotonEnlace from "../../ui/Botones/BotonEnlace";
+import BotonEnlace from "../../ui/botones_temp/BotonEnlace";
 
 function Sidebar(props) {
   const clasesSidebar = `${styles.sidebar} ${props.menuAbierto ? styles.activo : ""}`;

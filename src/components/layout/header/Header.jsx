@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
-import BotonHamburguesa from "../../ui/Botones/BotonHamburguesa";
+import BotonHamburguesa from "../../ui/botones_temp/BotonHamburguesa";
 
 function Header({ toggleMenu, menuAbierto }) {
   const location = useLocation();

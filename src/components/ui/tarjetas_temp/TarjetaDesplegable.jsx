@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./TarjetaDesplegable.module.css";
-import BotonBasico from "../Botones/BotonBasico";
+import BotonBasico from "../botones_temp/BotonBasico";
 
 const TarjetaDesplegable = ({ titulo, descripcion, children }) => {
   const [expandido, setExpandido] = useState(false);

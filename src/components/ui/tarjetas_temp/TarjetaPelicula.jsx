@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BotonExpandir from "../Botones/BotonBasico";
+import BotonExpandir from "../botones_temp/BotonBasico";
 import styles from "./TarjetaPelicula.module.css";
 
 function TarjetaPelicula({ titulo, imagen, sinopsis }) {

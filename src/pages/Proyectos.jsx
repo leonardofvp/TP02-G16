@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TarjetaBasica from "../components/ui/Tarjetas/TarjetaBasica";
-import InputBasico from "../components/ui/Imput/InputBasico";
+import TarjetaBasica from "../components/ui/tarjetas_temp/TarjetaBasica";
+import InputBasico from "../components/ui/input_temp/InputBasico";
 import styles from "./Proyectos.module.css";
 import datosProyectos from "../data/proyectos.json";
 

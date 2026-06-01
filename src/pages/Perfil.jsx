@@ -1,14 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import integrantesData from "../data/IntegrantesData.json";
-import TarjetaPersonal from "../components/ui/Tarjetas/TarjetaPersonal";
-import TarjetaHabilidad from "../components/ui/Tarjetas/TarjetaHabilidad";
-import TarjetaRedesSociales from "../components/ui/Tarjetas/TarjetaRedesSociales";
-import TarjetaPelicula from "../components/ui/Tarjetas/TarjetaPelicula";
-import TarjetaBasica from "../components/ui/Tarjetas/TarjetaBasica";
-import TarjetaDesplegable from "../components/ui/Tarjetas/TarjetaDesplegable";
-import CarruselProyectos from "../components/ui/Carrusel/CarruselProyectos";
-import BarraProgreso from "../components/ui/Barras/BarraProgreso";
+import TarjetaPersonal from "../components/ui/tarjetas_temp/TarjetaPersonal";
+import TarjetaHabilidad from "../components/ui/tarjetas_temp/TarjetaHabilidad";
+import TarjetaRedesSociales from "../components/ui/tarjetas_temp/TarjetaRedesSociales";
+import TarjetaPelicula from "../components/ui/tarjetas_temp/TarjetaPelicula";
+import TarjetaBasica from "../components/ui/tarjetas_temp/TarjetaBasica";
+import TarjetaDesplegable from "../components/ui/tarjetas_temp/TarjetaDesplegable";
+import CarruselProyectos from "../components/ui/carrusel_temp/CarruselProyectos";
+import BarraProgreso from "../components/ui/barras_temp/BarraProgreso";
 import { obtenerAvatar } from "../utils/diccionarioAvatares"
 import { obtenerIconoHabilidad } from "../utils/diccionarioIconosHabilidades";
 import { obtenerImagenPelicula } from "../utils/diccionarioImagenesPeliculas";

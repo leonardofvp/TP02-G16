@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Galeria.module.css";
-import BotonBasico from "../components/ui/Botones/BotonBasico";
+import BotonBasico from "../components/ui/botones_temp/BotonBasico";
 
 function Galeria() {
   // Array de imágenes de prueba. Podés cambiarlas por imágenes de tus proyectos.
