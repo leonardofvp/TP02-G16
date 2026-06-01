@@ -23,39 +23,40 @@ function ArbolRenderizado() {
            │    └── [BotonHamburguesa.jsx] (Control de UI móvil)
            ├── [Sidebar.jsx]
            │    └── [BotonEnlace.jsx] (Navegación declarativa)
-           ├── [Footer.jsx]
+           |
            │
            └── [Outlet] (Punto de inyección dinámica de páginas)
-                │
-                ├── Vistas Estáticas:
-                │    ├── [Home.jsx]
-                │    │    └── [TarjetaIntegrante.jsx] ──> [BotonEnlace.jsx]
-                │    ├── [Metodologias.jsx]
-                │    │    └── [TarjetaBasica.jsx]
-                │    ├── [Árbol.jsx]
-                │    │    └── [TarjetaBasica.jsx]
-                │    ├── [Bitacora.jsx]
-                │    │    └── [TarjetaDesplegable.jsx] (Componente contenedor con lógica de estado)
-                │    │         ├── ──> [TarjetaBasica.jsx] (Plantilla visual base)
-                │    │         └── ──> [BotonBasico.jsx] (Controlador del evento onClick)
-                │    ├── [Galeria.jsx]
-                │    │    └── [BotonBasico.jsx]
-                │    ├── [Proyectos.jsx]
-                │    │    └── [CarruselProyectos.jsx]
-                │    │         └── [BotonBasico.jsx]
-                │    └── [ConsumoApi.jsx] (ExploradorNoticias)
-                │         ├── [BotonBasico.jsx]
-                │         └── [TarjetaBasica.jsx]
-                │
-                └── Vistas Dinámicas (Parámetros por URL):
-                     └── [Perfil.jsx]
-                          └── [TarjetaIntegrante.jsx]
-                               ├── [TarjetaPersonal.jsx] ──────> [TarjetaBasica.jsx]
-                               ├── [TarjetaHabilidad.jsx]
-                               │    ├── ──> [TarjetaBasica.jsx]
-                               │    └── ──> [BarraProgreso.jsx]
-                               ├── [TarjetaPelicula.jsx] ──────> [BotonBasico.jsx]
-                               └── [TarjetaRedesSociales.jsx] ─> [TarjetaBasica.jsx]`}
+           |     │
+           |     ├── Vistas Estáticas:
+           |     │    ├── [Home.jsx]
+           |     │    │    └── [TarjetaIntegrante.jsx] ──> [BotonEnlace.jsx]
+           |     │    ├── [Metodologias.jsx]
+           |     │    │    └── [TarjetaBasica.jsx]
+           |     │    ├── [Árbol.jsx]
+           |     │    │    └── [TarjetaBasica.jsx]
+           |     │    ├── [Bitacora.jsx]
+           |     │    │    └── [TarjetaDesplegable.jsx] (Componente contenedor con lógica de estado)
+           |     │    │         ├── ──> [TarjetaBasica.jsx] (Plantilla visual base)
+           |     │    │         └── ──> [BotonBasico.jsx] (Controlador del evento onClick)
+           |     │    ├── [Galeria.jsx]
+           |     │    │    └── [BotonBasico.jsx]
+           |     │    ├── [Proyectos.jsx]
+           |     │    │    └── [CarruselProyectos.jsx]
+           |     │    │         └── [BotonBasico.jsx]
+           |     │    └── [ConsumoApi.jsx] (ExploradorNoticias)
+           |     │         ├── [BotonBasico.jsx]
+           |     │         └── [TarjetaBasica.jsx]
+           |     │
+           |     └── Vistas Dinámicas (Parámetros por URL):
+           |          └── [Perfil.jsx]
+           |               └── [TarjetaIntegrante.jsx]
+           |                    ├── [TarjetaPersonal.jsx] ──────> [TarjetaBasica.jsx]
+           |                    ├── [TarjetaHabilidad.jsx]
+           |                    │    ├── ──> [TarjetaBasica.jsx]
+           |                    │    └── ──> [BarraProgreso.jsx]
+           |                    ├── [TarjetaPelicula.jsx] ──────> [BotonBasico.jsx]
+           |                    └── [TarjetaRedesSociales.jsx] ─> [TarjetaBasica.jsx]
+           └── [Footer.jsx]`}
             </pre>
           </div>
         </TarjetaBasica>

@@ -1,8 +1,8 @@
 # Proyecto React del Equipo Orión - TP2
 
-**Trabajo Práctico Grupal N.° 2 - Proyecto React en Equipo**  
-Materia: Desarrollo de Sistemas Web (Front End)  
-Institución: IFTS N.° 29  
+**Trabajo Práctico Grupal N.° 2 - Proyecto React en Equipo**
+Materia: Desarrollo de Sistemas Web (Front End)
+Institución: IFTS N.° 29
 
 ---
 
@@ -21,10 +21,10 @@ El sitio incluye una navegación lateral estilo dashboard, una portada con tarje
 - [x] Repositorio en GitHub creado.
 - [x] Proyecto desplegado en Vercel.
 
-**Repositorio:**  
+**Repositorio:**
 https://github.com/leonardofvp/TP02-G16
 
-**Enlace en Vercel:**  
+**Enlace en Vercel:**
 https://tp-02-g16.vercel.app/
 
 ---
@@ -242,7 +242,7 @@ Ejemplo de habilidades incluidas en un perfil:
 
 - [x] Se incorporó una página de galería mediante `Galeria.jsx`.
 - [x] Las imágenes utilizadas se encuentran organizadas dentro de `src/assets/img`.
-- [x] La sección permite mostrar recursos visuales del proyecto en formato visual.
+- [x] La sección permite mostrar recursos visuales del los proyectos personales de los integranres.
 - [x] Lightbox con ampliación visual, navegación interna y cierre mediante tecla ESC.
 
 ---
@@ -261,42 +261,73 @@ Ejemplo de habilidades incluidas en un perfil:
 La aplicación parte desde el componente raíz `App.jsx`, donde se configuran las rutas principales mediante React Router.
 
 ```txt
-App.jsx
-│
-├── Layout
-│   ├── Sidebar
-│   │   ├── BotonEnlace
-│   │   └── BotonHamburguesa
-│   ├── Header
-│   ├── Outlet
-│   │   ├── Home
-│   │   │   └── TarjetaIntegrante
-│   │   ├── Perfil
-│   │   │   ├── TarjetaPersonal
-│   │   │   ├── TarjetaHabilidad
-│   │   │   ├── BarraProgreso
-│   │   │   ├── CarruselProyectos
-│   │   │   ├── TarjetaPelicula
-│   │   │   └── TarjetaRedesSociales
-│   │   ├── Bitacora
-│   │   ├── Metodologias
-│   │   ├── Tecnologias
-│   │   ├── Proyectos
-│   │   ├── Galeria
-│   │   └── ConsumoApi
-│   └── Footer
+[main.jsx] (Punto de entrada / Nodo Raíz)
+ └── [App.jsx] (Contexto de Enrutamiento)
+      └── [Layout.jsx]
+           ├── [Header.jsx]
+           │    └── [BotonHamburguesa.jsx]
+           ├── [Sidebar.jsx]
+           │    └── [BotonEnlace.jsx]
+           |
+           │
+           └── [Outlet] (Punto de inyección dinámica de páginas)
+           |     │
+           |     ├── Vistas Estáticas:
+           |     │    ├── [Home.jsx]
+           |     │    │    └── [TarjetaIntegrante.jsx] ──> [BotonEnlace.jsx]
+           |     │    ├── [Metodologias.jsx]
+           |     │    │    └── [TarjetaBasica.jsx]
+           |     │    ├── [Árbol.jsx]
+           |     │    │    └── [TarjetaBasica.jsx]
+           |     │    ├── [Bitacora.jsx]
+           |     │    │    └── [TarjetaDesplegable.jsx]
+           |     │    │         ├── ──> [TarjetaBasica.jsx]
+           |     │    │         └── ──> [BotonBasico.jsx]
+           |     │    ├── [Galeria.jsx]
+           |     │    │    └── [BotonBasico.jsx]
+           |     │    ├── [Proyectos.jsx]
+           |     │    │    └── [CarruselProyectos.jsx]
+           |     │    │         └── [BotonBasico.jsx]
+           |     │    └── [ConsumoApi.jsx] (ExploradorNoticias)
+           |     │         ├── [BotonBasico.jsx]
+           |     │         └── [TarjetaBasica.jsx]
+           |     │
+           |     └── Vistas Dinámicas (Parámetros por URL):
+           |          └── [Perfil.jsx]
+           |               └── [TarjetaIntegrante.jsx]
+           |                    ├── [TarjetaPersonal.jsx] ──────> [TarjetaBasica.jsx]
+           |                    ├── [TarjetaHabilidad.jsx]
+           |                    │    ├── ──> [TarjetaBasica.jsx]
+           |                    │    └── ──> [BarraProgreso.jsx]
+           |                    ├── [TarjetaPelicula.jsx] ──────> [BotonBasico.jsx]
+           |                    └── [TarjetaRedesSociales.jsx] ─> [TarjetaBasica.jsx]
+           └── [Footer.jsx]
 ```
 
-- [x] `App.jsx`: componente raíz de la aplicación.
-- [x] `Layout`: estructura general que contiene navegación y contenido.
-- [x] `Sidebar`: menú lateral fijo.
-- [x] `Header`: encabezado del layout.
-- [x] `Outlet`: espacio donde se renderizan las páginas internas.
-- [x] `Home`: página principal.
-- [x] `Perfil`: página individual de cada integrante.
-- [x] `CarruselProyectos`: componente reutilizable para mostrar proyectos.
-- [x] `BarraProgreso`: componente visual para representar habilidades.
-- [x] `Footer`: pie de página común del proyecto.
+[x] App.jsx: componente raíz de la aplicación.
+[x] Layout: estructura general que contiene navegación y contenido.
+[x] Sidebar: menú lateral fijo.
+[x] BotonEnlace: componente para los enlaces de navegación.
+[x] BotonHamburguesa: control para desplegar el menú en móviles.
+[x] Header: encabezado del layout.
+[x] Outlet: espacio donde se renderizan las páginas internas según la ruta.
+[x] Home: página principal.
+[x] TarjetaIntegrante: componente para mostrar el resumen de cada miembro en el Home.
+[x] Perfil: página individual de cada integrante.
+[x] TarjetaPersonal: componente con los datos personales del integrante.
+[x] TarjetaHabilidad: componente para listar las competencias técnicas/blandas.
+[x] BarraProgreso: componente visual para representar el nivel de habilidades.
+[x] CarruselProyectos: componente reutilizable para mostrar proyectos.
+[x] TarjetaPelicula: componente para mostrar las películas favoritas.
+[x] TarjetaRedesSociales: componente con los enlaces de contacto.
+[x] BotonBasico: componente de interfaz reutilizable para disparar acciones.
+[x] Bitacora: vista del registro de actividades.
+[x] Metodologias: vista explicativa sobre la metodología de trabajo.
+[x] ArbolRenderizado: vista con el árbol de renderizado.
+[x] Proyectos: vista general con el explorador de todos los proyectos.
+[x] Galeria: vista ampliada de imágenes.
+[x] ConsumoApi: vista dedicada a la demostración de peticiones asíncronas.
+[x] Footer: pie de página común del proyecto.
 
 ---
 
@@ -354,14 +385,15 @@ Archivo de datos utilizado para renderizar la información de proyectos dentro d
 - Color de texto principal: `#e0e1dd`
 - Color de texto secundario: `#8b9bb4`
 - Color de acento: `#007bff`
+- Color de error: `ff6b6b`
 
 ---
 
 ### Tipografías
 
 - [x] Uso de Google Fonts.
-- Títulos: Montserrat.
-- Cuerpo del texto: Roboto.
+- Títulos: Montserrat https://fonts.google.com/specimen/Montserrat.
+- Cuerpo del texto: Roboto https://fonts.google.com/specimen/Roboto?query=roboto.
 
 ---
 
@@ -443,39 +475,29 @@ Para optimizar el proceso de desarrollo, resolver problemas técnicos y mejorar 
 
 ### Herramientas utilizadas
 
-- ChatGPT.
-- Gemini.
+- ChatGPT GPT-5.3.
+- Gemini 3.1 Pro.
 - Copilot, utilizado de forma puntual para sugerencias y correcciones menores de código.
 
 ---
 
-### Uso en lógica y debugging
+### ChatGPT (GPT-5.3)
 
-- [x] Revisión de errores de sintaxis en archivos JSON y JavaScript.
-- [x] Corrección de rutas de imágenes.
-- [x] Apoyo en la organización de componentes.
-- [x] Orientación para integrar proyectos personales al carrusel.
-- [x] Revisión de imports, exports y funciones auxiliares.
-- [x] Asistencia para mejorar descripciones y documentación.
-- [x] Uso puntual de Copilot para sugerencias/correcciones menores de código.
+- **Lógica:** Revisión de errores de sintaxis en archivos JSON y JavaScript.
+- **Contenido:** Apoyo en la redacción, revisión ortográfica y estructuración de las descripciones personales y de proyectos.
+- **Contenido:** Mejora y formato de los textos generales para la documentación del README.
 
----
+### Gemini (3.1 Pro)
 
-### Uso en contenido
+- **Debugging:** Identificación y resolución de errores lógicos estructurales en el código.
+- **UX/UI e Interfaz:** Asesoramiento en jerarquía visual, flujo de lectura y experiencia de usuario (ej. alineación contextual de filtros y manejo de estados vacíos). Resolución de conflictos de CSS Modules, incluyendo ajustes de `position: sticky` en el Sidebar, alineaciones con Flexbox y control de `aspect-ratio` en imágenes.
+- **Imágenes:** Generación de imagen del logo y favicon.
+- **Contenido:** Creación del archivo JSON con los proyectos extras del buscador.
 
-- [x] Apoyo en la redacción de descripciones personales.
-- [x] Apoyo en la redacción de descripciones de proyectos.
-- [x] Mejora de textos para el README.
-- [x] Revisión de coherencia entre perfil, habilidades y proyectos.
+### GitHub Copilot
 
----
-
-### Uso en imágenes
-
-- [x] Algunas imágenes fueron generadas, adaptadas o seleccionadas con apoyo de IA.
-- [x] Se utilizaron imágenes representativas para proyectos conceptuales.
-- [x] Las imágenes de proyectos fueron ajustadas a formato 16:9 para mantener coherencia visual en el carrusel.
-- [x] Los recursos visuales se utilizaron con fines académicos.
+- **Desarrollo:** Sugerencias predictivas de autocompletado en tiempo real dentro del entorno de desarrollo (IDE).
+- **Desarrollo:** Correcciones tipográficas y sintácticas menores durante la escritura de los componentes de React.
 
 ---
 
@@ -506,7 +528,7 @@ http://localhost:5174/
 
 El proyecto fue desplegado en Vercel.
 
-**Enlace al deploy:**  
+**Enlace al deploy:**
 https://tp-02-g16.vercel.app/
 
 ---
@@ -521,6 +543,7 @@ https://tp-02-g16.vercel.app/
 - [x] Archivo `proyectos.json` con 20 objetos.
 - [x] Búsqueda y filtrado en tiempo real implementados en la sección de proyectos.
 - [x] Galería con lightbox, navegación interna y cierre mediante tecla ESC.
+- [x] Seccion con árbol de renderizado.
 - [x] Capturas incorporadas al README.
 - [x] Proyecto publicado en Vercel.
 - [x] README actualizado.
