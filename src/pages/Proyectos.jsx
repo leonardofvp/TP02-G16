@@ -19,8 +19,10 @@ function Proyectos() {
   // 2. Renderizado del JSX
   return (
     <section className={styles.contenedorExplorador}>
-      <h2>Explorador de Proyectos</h2>
+      <h2>Proyectos</h2>
+      <p>Previamente a este tarjeta web, nuestro equipo ha colaborado con éxito en los siguientes proyectos</p>
 
+      <h2>Explorador de proyectos</h2>
       {/* Input de Búsqueda */}
       <div className={styles.contenedorBuscador}>
         <InputBasico
