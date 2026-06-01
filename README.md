@@ -64,73 +64,132 @@ El proyecto se organizó siguiendo buenas prácticas de desarrollo en React, sep
 
 ```txt
 TP02-G16/
-│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
 ├── public/
-│
+│   └── favicon.png
+├── README.md
 ├── src/
 │   ├── App.jsx
-│   ├── main.jsx
-│   │
 │   ├── assets/
 │   │   └── img/
+│   │       ├── automatizador-de-reportes.avif
 │   │       ├── capturas/
+│   │       │   ├── api.png
+│   │       │   ├── bitacora.png
+│   │       │   ├── galeria.png
 │   │       │   ├── home.png
 │   │       │   ├── perfil.png
-│   │       │   ├── proyectos.png
-│   │       │   ├── galeria.png
-│   │       │   ├── api.png
-│   │       │   └── bitacora.png
+│   │       │   └── proyectos.png
+│   │       ├── caro.png
+│   │       ├── comunidad-del-anillo.webp
+│   │       ├── configuraciones-manuales.png
+│   │       ├── dashboard-pyme.png
+│   │       ├── doss.jpg
+│   │       ├── ecobudget-pro.jpg
+│   │       ├── el-retorno-del-rey.webp
+│   │       ├── enemigo.jpg
+│   │       ├── escabio-interplanetario.png
+│   │       ├── felicidad.webp
+│   │       ├── imitacion.webp
+│   │       ├── intime.jpg
+│   │       ├── juegos-del-hambre-sinsajo.webp
+│   │       ├── las-dos-torres.webp
+│   │       ├── leandro-avatar.jpg
+│   │       ├── leo.png
 │   │       ├── logo-equipo.png
+│   │       ├── manu.png
+│   │       ├── matrix.jpg
+│   │       ├── melinya-avatar.jpg
+│   │       ├── menu-desplegado.png
+│   │       ├── menu-plegado.png
+│   │       ├── moneyball.webp
 │   │       ├── orion.png
-│   │       ├── avatares de integrantes
-│   │       ├── imágenes de películas
-│   │       └── imágenes de proyectos personales
-│   │
+│   │       ├── palais.jpg
+│   │       ├── pie-pequeño.webp
+│   │       ├── promel1.png
+│   │       ├── promel2.png
+│   │       ├── promel3.jpg
+│   │       ├── spacewars.png
+│   │       └── tropa.jpg
 │   ├── components/
 │   │   ├── layout/
-│   │   │   ├── Layout.jsx
 │   │   │   ├── footer/
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── Footer.module.css
 │   │   │   ├── header/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   └── Header.module.css
+│   │   │   ├── Layout.jsx
+│   │   │   ├── Layout.module.css
 │   │   │   └── sidebar/
-│   │   │
+│   │   │       ├── Sidebar.jsx
+│   │   │       └── Sidebar.module.css
 │   │   └── ui/
-│   │       ├── Barras/
-│   │       ├── Botones/
-│   │       ├── Carrusel/
-│   │       ├── Imput/
-│   │       └── Tarjetas/
-│   │
+│   │       ├── barras/
+│   │       │   ├── BarraProgreso.jsx
+│   │       │   └── BarraProgreso.module.css
+│   │       ├── botones/
+│   │       │   ├── BotonBasico.jsx
+│   │       │   ├── BotonBasico.module.css
+│   │       │   ├── BotonEnlace.jsx
+│   │       │   ├── BotonEnlace.module.css
+│   │       │   ├── BotonHamburguesa.jsx
+│   │       │   └── BotonMenuHamburguesa.module.css
+│   │       ├── carrusel/
+│   │       │   ├── CarruselProyectos.jsx
+│   │       │   └── CarruselProyectos.module.css
+│   │       ├── inputs-personalizados/
+│   │       │   ├── InputBasico.jsx
+│   │       │   └── InputBasico.module.css
+│   │       └── tarjetas/
+│   │           ├── TarjetaBasica.jsx
+│   │           ├── TarjetaBasica.module.css
+│   │           ├── TarjetaDesplegable.jsx
+│   │           ├── TarjetaDesplegable.module.css
+│   │           ├── TarjetaHabilidad.jsx
+│   │           ├── TarjetaHabilidad.module.css
+│   │           ├── TarjetaIntegrante.jsx
+│   │           ├── TarjetaIntegrante.module.css
+│   │           ├── TarjetaPelicula.jsx
+│   │           ├── TarjetaPelicula.module.css
+│   │           ├── TarjetaPersonal.jsx
+│   │           ├── TarjetaPersonal.module.css
+│   │           ├── TarjetaRedesSociales.jsx
+│   │           └── TarjetaRedesSociales.module.css
 │   ├── data/
 │   │   ├── IntegrantesData.json
 │   │   └── proyectos.json
-│   │
+│   ├── main.jsx
 │   ├── pages/
+│   │   ├── ArbolRenderizado.jsx
+│   │   ├── ArbolRenderizado.module.css
 │   │   ├── Bitacora.jsx
+│   │   ├── Bitacora.module.css
 │   │   ├── ConsumoApi.jsx
+│   │   ├── ConsumoApi.module.css
 │   │   ├── Galeria.jsx
+│   │   ├── Galeria.module.css
 │   │   ├── Home.jsx
-│   │   ├── HomeViejo.jsx
+│   │   ├── Home.module.css
 │   │   ├── Metodologias.jsx
+│   │   ├── Metodologias.module.css
 │   │   ├── Perfil.jsx
+│   │   ├── Perfil.module.css
 │   │   ├── Proyectos.jsx
-│   │   └── Tecnologias.jsx
-│   │
+│   │   └── Proyectos.module.css
 │   ├── styles/
 │   │   └── global.css
-│   │
 │   └── utils/
 │       ├── diccionarioAvatares.js
 │       ├── diccionarioIconosHabilidades.jsx
 │       ├── diccionarioImagenesPeliculas.js
 │       └── diccionarioProyectosPersonales.js
-│
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── README.md
 └── vite.config.js
+
 ```
 
 - [x] Carpeta `components` para componentes reutilizables.
@@ -139,6 +198,7 @@ TP02-G16/
 - [x] Carpeta `pages` para las vistas principales de la aplicación.
 - [x] Carpeta `data` para archivos JSON.
 - [x] Carpeta `assets/img` para imágenes, avatares, logos y proyectos.
+- [x] Carpeta styles: Directorio que almacena los estilos globales del sitio. Contiene la declaración de variables CSS, el reset básico del navegador y la configuración general de tipografías y colores.
 - [x] Carpeta `utils` para diccionarios y funciones auxiliares.
 - [x] Archivo `App.jsx` para la configuración principal de rutas.
 - [x] Archivo `main.jsx` como punto de entrada de React.
