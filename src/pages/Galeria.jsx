@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+// 1. Importación agregada
+import { createPortal } from "react-dom";
 import styles from "./Galeria.module.css";
 import BotonBasico from "../components/ui/botones/BotonBasico";
 import { obtenerTodosLosProyectos } from "../utils/diccionarioProyectosPersonales";
@@ -65,14 +67,12 @@ function Galeria() {
         ))}
       </div>
 
-      {/* Renderizado Condicional del Lightbox */}
-      {indiceActivo !== null && (
+      {/* 2. Renderizado Condicional del Lightbox usando Portal */}
+      {indiceActivo !== null && createPortal(
         <div className={styles.lightboxOverlay} onClick={cerrarLightbox}>
           <div className={styles.contenedorBotones}>
             <BotonBasico texto="&#10094;" onClick={imagenAnterior} />
-
             <BotonBasico texto="X" onClick={cerrarLightbox} />
-
             <BotonBasico texto="&#10095;" onClick={imagenSiguiente} />
           </div>
           <div>
@@ -84,7 +84,8 @@ function Galeria() {
             className={styles.imagenLightbox}
             onClick={(e) => e.stopPropagation()}
           />
-        </div>
+        </div>,
+        document.body // Inyección directa en el nodo raíz
       )}
     </section>
   );

@@ -32,22 +32,22 @@
 }
 
 .lightboxOverlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100svh;
   background-color: rgba(0, 0, 0, 0.95);
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 2rem 1rem;
-  gap: 1.5rem;
 }
 
 .imagenLightbox {
-  grid-row: 2; /* Lo ubica en la fila central gigante */
+  grid-row: 2;
   max-width: 50vw;
   max-height: 50vh;
   object-fit: contain;
