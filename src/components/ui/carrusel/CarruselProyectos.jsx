@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Slider = ReactSlick.default || ReactSlick;
 
 function CarruselProyectos({ proyectos }) {
+  // 1. Creamos la referencia para controlar el slider
   const sliderRef = useRef(null);
 
   const listaProyectos = proyectos ? Object.values(proyectos) : [];
