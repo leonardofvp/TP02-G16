@@ -319,47 +319,136 @@ Ejemplo de habilidades incluidas en un perfil:
 La aplicación parte desde el componente raíz `App.jsx`, donde se configuran las rutas principales mediante React Router.
 
 ```txt
-[main.jsx] (Punto de entrada / Nodo Raíz)
- └── [App.jsx] (Contexto de Enrutamiento)
-      └── [Layout.jsx]
-           ├── [Header.jsx]
-           │    └── [BotonHamburguesa.jsx]
-           ├── [Sidebar.jsx]
-           │    └── [BotonEnlace.jsx]
-           |
-           │
-           └── [Outlet] (Punto de inyección dinámica de páginas)
-           |     │
-           |     ├── Vistas Estáticas:
-           |     │    ├── [Home.jsx]
-           |     │    │    └── [TarjetaIntegrante.jsx] ──> [BotonEnlace.jsx]
-           |     │    ├── [Metodologias.jsx]
-           |     │    │    └── [TarjetaBasica.jsx]
-           |     │    ├── [Árbol.jsx]
-           |     │    │    └── [TarjetaBasica.jsx]
-           |     │    ├── [Bitacora.jsx]
-           |     │    │    └── [TarjetaDesplegable.jsx]
-           |     │    │         ├── ──> [TarjetaBasica.jsx]
-           |     │    │         └── ──> [BotonBasico.jsx]
-           |     │    ├── [Galeria.jsx]
-           |     │    │    └── [BotonBasico.jsx]
-           |     │    ├── [Proyectos.jsx]
-           |     │    │    └── [CarruselProyectos.jsx]
-           |     │    │         └── [BotonBasico.jsx]
-           |     │    └── [ConsumoApi.jsx] (ExploradorNoticias)
-           |     │         ├── [BotonBasico.jsx]
-           |     │         └── [TarjetaBasica.jsx]
-           |     │
-           |     └── Vistas Dinámicas (Parámetros por URL):
-           |          └── [Perfil.jsx]
-           |               └── [TarjetaIntegrante.jsx]
-           |                    ├── [TarjetaPersonal.jsx] ──────> [TarjetaBasica.jsx]
-           |                    ├── [TarjetaHabilidad.jsx]
-           |                    │    ├── ──> [TarjetaBasica.jsx]
-           |                    │    └── ──> [BarraProgreso.jsx]
-           |                    ├── [TarjetaPelicula.jsx] ──────> [BotonBasico.jsx]
-           |                    └── [TarjetaRedesSociales.jsx] ─> [TarjetaBasica.jsx]
-           └── [Footer.jsx]
+TP02-G16/
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── public/
+│   └── favicon.png
+├── README.md
+├── src/
+│   ├── App.jsx
+│   ├── assets/
+│   │   └── img/
+│   │       ├── automatizador-de-reportes.avif
+│   │       ├── capturas/
+│   │       │   ├── api.png
+│   │       │   ├── bitacora.png
+│   │       │   ├── galeria.png
+│   │       │   ├── home.png
+│   │       │   ├── perfil.png
+│   │       │   └── proyectos.png
+│   │       ├── caro.png
+│   │       ├── comunidad-del-anillo.webp
+│   │       ├── configuraciones-manuales.png
+│   │       ├── dashboard-pyme.png
+│   │       ├── doss.jpg
+│   │       ├── ecobudget-pro.jpg
+│   │       ├── el-retorno-del-rey.webp
+│   │       ├── enemigo.jpg
+│   │       ├── escabio-interplanetario.png
+│   │       ├── estereosenlanube.png
+│   │       ├── felicidad.webp
+│   │       ├── imitacion.webp
+│   │       ├── intime.jpg
+│   │       ├── juegos-del-hambre-sinsajo.webp
+│   │       ├── las-dos-torres.webp
+│   │       ├── leandro-avatar.jpg
+│   │       ├── learnwithme.png
+│   │       ├── leo.png
+│   │       ├── logo-equipo.png
+│   │       ├── manu.png
+│   │       ├── matrix.jpg
+│   │       ├── melinya-avatar.jpg
+│   │       ├── menu-desplegado.png
+│   │       ├── menu-plegado.png
+│   │       ├── moneyball.webp
+│   │       ├── orion.png
+│   │       ├── palais.jpg
+│   │       ├── pie-pequeño.webp
+│   │       ├── promel1.png
+│   │       ├── promel2.png
+│   │       ├── promel3.jpg
+│   │       ├── reparame.png
+│   │       ├── spacewars.png
+│   │       └── tropa.jpg
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── footer/
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── Footer.module.css
+│   │   │   ├── header/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   └── Header.module.css
+│   │   │   ├── Layout.jsx
+│   │   │   ├── Layout.module.css
+│   │   │   └── sidebar/
+│   │   │       ├── Sidebar.jsx
+│   │   │       └── Sidebar.module.css
+│   │   └── ui/
+│   │       ├── barras/
+│   │       │   ├── BarraProgreso.jsx
+│   │       │   └── BarraProgreso.module.css
+│   │       ├── botones/
+│   │       │   ├── BotonBasico.jsx
+│   │       │   ├── BotonBasico.module.css
+│   │       │   ├── BotonEnlace.jsx
+│   │       │   ├── BotonEnlace.module.css
+│   │       │   ├── BotonHamburguesa.jsx
+│   │       │   └── BotonMenuHamburguesa.module.css
+│   │       ├── carrusel/
+│   │       │   ├── CarruselProyectos.jsx
+│   │       │   └── CarruselProyectos.module.css
+│   │       ├── inputs-personalizados/
+│   │       │   ├── InputBasico.jsx
+│   │       │   └── InputBasico.module.css
+│   │       └── tarjetas/
+│   │           ├── TarjetaBasica.jsx
+│   │           ├── TarjetaBasica.module.css
+│   │           ├── TarjetaDesplegable.jsx
+│   │           ├── TarjetaDesplegable.module.css
+│   │           ├── TarjetaHabilidad.jsx
+│   │           ├── TarjetaHabilidad.module.css
+│   │           ├── TarjetaIntegrante.jsx
+│   │           ├── TarjetaIntegrante.module.css
+│   │           ├── TarjetaPelicula.jsx
+│   │           ├── TarjetaPelicula.module.css
+│   │           ├── TarjetaPersonal.jsx
+│   │           ├── TarjetaPersonal.module.css
+│   │           ├── TarjetaRedesSociales.jsx
+│   │           └── TarjetaRedesSociales.module.css
+│   ├── data/
+│   │   ├── IntegrantesData.json
+│   │   └── proyectos.json
+│   ├── main.jsx
+│   ├── pages/
+│   │   ├── ArbolRenderizado.jsx
+│   │   ├── ArbolRenderizado.module.css
+│   │   ├── Bitacora.jsx
+│   │   ├── Bitacora.module.css
+│   │   ├── ConsumoApi.jsx
+│   │   ├── ConsumoApi.module.css
+│   │   ├── Galeria.jsx
+│   │   ├── Galeria.module.css
+│   │   ├── Home.jsx
+│   │   ├── Home.module.css
+│   │   ├── Metodologias.jsx
+│   │   ├── Metodologias.module.css
+│   │   ├── Perfil.jsx
+│   │   ├── Perfil.module.css
+│   │   ├── Proyectos.jsx
+│   │   └── Proyectos.module.css
+│   ├── styles/
+│   │   └── global.css
+│   └── utils/
+│       ├── diccionarioAvatares.js
+│       ├── diccionarioIconosHabilidades.jsx
+│       ├── diccionarioImagenesPeliculas.js
+│       └── diccionarioProyectosPersonales.js
+└── vite.config.js
+
 ```
 
 - [x] App.jsx: componente raíz de la aplicación.
@@ -393,17 +482,20 @@ La aplicación parte desde el componente raíz `App.jsx`, donde se configuran la
 
 El proyecto está construido íntegramente con componentes funcionales de React. La gestión del estado, la manipulación del DOM y la interceptación de rutas se manejan de forma estricta mediante Hooks, garantizando un ciclo de vida predecible sin mutaciones directas.
 
-* **`useState`**: Implementado para la persistencia y actualización del estado local dentro del ciclo de vida de los componentes.
-    * *Aplicación:* Controla la renderización condicional de las interfaces de usuario. Se utiliza para manejar el estado lógico del menú de navegación móvil (`menuAbierto` / `toggleMenu`) y para almacenar el índice numérico de la imagen activa en el componente `Galeria` (`indiceActivo`), permitiendo la apertura, cierre y navegación del *Lightbox* y y para expandir y contraer las tarjetas desplegables.
+- **`useState`**: Implementado para la persistencia y actualización del estado local dentro del ciclo de vida de los componentes.
+  - _Aplicación:_ Controla la renderización condicional de las interfaces de usuario. Se utiliza para manejar el estado lógico del menú de navegación móvil (`menuAbierto` / `toggleMenu`) y para almacenar el índice numérico de la imagen activa en el componente `Galeria` (`indiceActivo`), permitiendo la apertura, cierre y navegación del _Lightbox_ y y para expandir y contraer las tarjetas desplegables.
 
-* **`useEffect`**: Utilizado para aislar y ejecutar efectos secundarios (operaciones que interactúan con APIs externas o el DOM global) fuera de la fase de renderizado puro de React.
-    * *Aplicación:* En el componente `Galeria`, se ejecuta de forma condicional al mutar el estado `indiceActivo`. Se encarga de suscribir y desuscribir eventos nativos del navegador (`window.addEventListener('keydown')`) para cerrar el *Lightbox* con la tecla Escape. Además, manipula el CSS global (`document.body.style.overflow`) para bloquear y habilitar el scroll físico de la página. Incorpora siempre su respectiva función de retorno (*cleanup function*) para evitar fugas de memoria al desmontar el componente.
+- **`useEffect`**: Utilizado para aislar y ejecutar efectos secundarios (operaciones que interactúan con APIs externas o el DOM global) fuera de la fase de renderizado puro de React.
+  - _Aplicación:_ En el componente `Galeria`, se ejecuta de forma condicional al mutar el estado `indiceActivo`. Se encarga de suscribir y desuscribir eventos nativos del navegador (`window.addEventListener('keydown')`) para cerrar el _Lightbox_ con la tecla Escape. Además, manipula el CSS global (`document.body.style.overflow`) para bloquear y habilitar el scroll físico de la página. Incorpora siempre su respectiva función de retorno (_cleanup function_) para evitar fugas de memoria al desmontar el componente.
 
-* **`useParams` (`react-router-dom`)**: Permite la lectura y extracción reactiva de los parámetros dinámicos definidos en el enrutador.
-    * *Aplicación:* Implementado en las vistas de renderizado dinámico (como las páginas individuales de perfil). Captura las variables inyectadas directamente en la estructura de la URL (por ejemplo, el valor de `:nombre` en una ruta parametrizada como `/perfil/:nombre`). Este valor extraído se utiliza posteriormente como clave de búsqueda para filtrar la información específica de cada integrante del equipo, permitiendo reutilizar un único componente funcional como plantilla para múltiples rutas.
+- **`useRef`**: Proporciona un contenedor persistente que permite almacenar valores mutables sin disparar un nuevo ciclo de renderizado. Facilita el acceso imperativo a instancias de componentes o elementos del DOM.
+  - _Aplicación:_ Implementado en el componente CarruselProyectos para capturar la instancia del componente Slider de terceros (react-slick). Permite realizar un control imperativo de la navegación mediante la invocación directa de los métodos internos .slickNext() y .slickPrev() desde disparadores externos (botones de navegación personalizados). Esta estrategia garantiza el desacoplamiento entre la lógica de control y la estructura visual del carrusel, manteniendo la integridad del ciclo de vida de React al evitar re-renderizados innecesarios durante la manipulación de la instancia.
 
-* **`useLocation` (`react-router-dom`)**: Permite la lectura reactiva del objeto de ubicación del enrutador.
-    * *Aplicación:* Implementado en el componente `Header` para interceptar la URL actual del navegador (`location.pathname`). A través de lógica condicional y manipulación de strings (`split`, `charAt`, `toUpperCase`), extrae el segmento de la ruta para inyectar dinámicamente el título exacto de la vista actual ("Home", "Bitácora", "Galería" o el nombre formateado de cada perfil individual) en el encabezado de la aplicación.
+- **`useParams` (`react-router-dom`)**: Permite la lectura y extracción reactiva de los parámetros dinámicos definidos en el enrutador.
+  - _Aplicación:_ Implementado en las vistas de renderizado dinámico (como las páginas individuales de perfil). Captura las variables inyectadas directamente en la estructura de la URL (por ejemplo, el valor de `:nombre` en una ruta parametrizada como `/perfil/:nombre`). Este valor extraído se utiliza posteriormente como clave de búsqueda para filtrar la información específica de cada integrante del equipo, permitiendo reutilizar un único componente funcional como plantilla para múltiples rutas.
+
+- **`useLocation` (`react-router-dom`)**: Permite la lectura reactiva del objeto de ubicación del enrutador.
+  - _Aplicación:_ Implementado en el componente `Header` para interceptar la URL actual del navegador (`location.pathname`). A través de lógica condicional y manipulación de strings (`split`, `charAt`, `toUpperCase`), extrae el segmento de la ruta para inyectar dinámicamente el título exacto de la vista actual ("Home", "Bitácora", "Galería" o el nombre formateado de cada perfil individual) en el encabezado de la aplicación.
 
 ---
 
@@ -502,21 +594,37 @@ A continuación se presentan capturas de las principales secciones del proyecto 
 
 <img src="src/assets/img/capturas/perfil.png" alt="Perfil individual" width="700">
 
+### Bitácora
+
+<img src="src/assets/img/capturas/bitacora.png" alt="Bitácora" width="700">
+
+### Árbol de renderizado
+
+<img src="src/assets/img/capturas/arbol-renderizado.png" alt="Bitácora" width="700">
+
 ### Explorador de proyectos
 
 <img src="src/assets/img/capturas/proyectos.png" alt="Explorador de proyectos" width="700">
-
-### Galería
-
-<img src="src/assets/img/capturas/galeria.png" alt="Galería" width="700">
 
 ### Consumo de API externa
 
 <img src="src/assets/img/capturas/api.png" alt="Consumo de API externa" width="700">
 
-### Bitácora
+### Tarjeta desplegada
 
-<img src="src/assets/img/capturas/bitacora.png" alt="Bitácora" width="700">
+<img src="src/assets/img/capturas/tarjeta-desplegable.png" alt="Tarjeta desplegada" width="700">
+
+### Menu hamburguesa para pantallas chicas
+
+<img src="src/assets/img/capturas/pantalla-chica.png" alt="Menu hamburguesa para pantallas chicas" width="700">
+
+### Menu hamburguesa desplegado
+
+<img src="src/assets/img/capturas/pantalla-chica-menu-desplegado.png" alt="Menu hamburguesa desplegado" width="700">
+
+### Desplazamiento horizontal del árbol de renderizado para pantallas chicas
+
+<img src="src/assets/img/capturas/arbol-desplazamiento.png" alt="Desplazamiento horizontal del árbol de renderizado para pantallas chicas" width="700">
 
 ---
 
