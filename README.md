@@ -389,19 +389,43 @@ La aplicación parte desde el componente raíz `App.jsx`, donde se configuran la
 
 ---
 
+## Uso de Hooks
+
+El proyecto está construido íntegramente con componentes funcionales de React. La gestión del estado, la manipulación del DOM y la interceptación de rutas se manejan de forma estricta mediante Hooks, garantizando un ciclo de vida predecible sin mutaciones directas.
+
+* **`useState`**: Implementado para la persistencia y actualización del estado local dentro del ciclo de vida de los componentes.
+    * *Aplicación:* Controla la renderización condicional de las interfaces de usuario. Se utiliza para manejar el estado lógico del menú de navegación móvil (`menuAbierto` / `toggleMenu`) y para almacenar el índice numérico de la imagen activa en el componente `Galeria` (`indiceActivo`), permitiendo la apertura, cierre y navegación del *Lightbox* y y para expandir y contraer las tarjetas desplegables.
+
+* **`useEffect`**: Utilizado para aislar y ejecutar efectos secundarios (operaciones que interactúan con APIs externas o el DOM global) fuera de la fase de renderizado puro de React.
+    * *Aplicación:* En el componente `Galeria`, se ejecuta de forma condicional al mutar el estado `indiceActivo`. Se encarga de suscribir y desuscribir eventos nativos del navegador (`window.addEventListener('keydown')`) para cerrar el *Lightbox* con la tecla Escape. Además, manipula el CSS global (`document.body.style.overflow`) para bloquear y habilitar el scroll físico de la página. Incorpora siempre su respectiva función de retorno (*cleanup function*) para evitar fugas de memoria al desmontar el componente.
+
+* **`useParams` (`react-router-dom`)**: Permite la lectura y extracción reactiva de los parámetros dinámicos definidos en el enrutador.
+    * *Aplicación:* Implementado en las vistas de renderizado dinámico (como las páginas individuales de perfil). Captura las variables inyectadas directamente en la estructura de la URL (por ejemplo, el valor de `:nombre` en una ruta parametrizada como `/perfil/:nombre`). Este valor extraído se utiliza posteriormente como clave de búsqueda para filtrar la información específica de cada integrante del equipo, permitiendo reutilizar un único componente funcional como plantilla para múltiples rutas.
+
+* **`useLocation` (`react-router-dom`)**: Permite la lectura reactiva del objeto de ubicación del enrutador.
+    * *Aplicación:* Implementado en el componente `Header` para interceptar la URL actual del navegador (`location.pathname`). A través de lógica condicional y manipulación de strings (`split`, `charAt`, `toUpperCase`), extrae el segmento de la ruta para inyectar dinámicamente el título exacto de la vista actual ("Home", "Bitácora", "Galería" o el nombre formateado de cada perfil individual) en el encabezado de la aplicación.
+
+---
+
 ## Funciones y Componentes Destacados
 
 ### `Perfil.jsx`
 
-Renderiza la información individual de cada integrante a partir del parámetro recibido por la URL. Utiliza datos locales para mostrar descripción, habilidades, proyectos, películas, sección extra y redes sociales.
+Componente de interfaz encargado del renderizado dinámico. Su función principal es capturar el parámetro de la ruta activa en la URL y estructurar visualmente la información en la pantalla. Actúa exclusivamente como una plantilla de presentación reutilizable, delegando el origen de la información a archivos externos para mantener el código limpio de contenido estructurado en duro (hardcodeado).
+
+---
+
+### `IntegrantesData.json`
+
+Estructura de datos estática que actúa como la base de datos del lado del cliente. Centraliza las propiedades de cada miembro del equipo (datos personales y descripciones) en un formato predecible. Es la dependencia directa de la cual Perfil.jsx extrae la información exacta a mostrar, permitiendo actualizar o agregar miembros al proyecto sin necesidad de modificar el código de los componentes en React.
 
 ---
 
 ### `obtenerProyectosPersonales`
 
-Función auxiliar utilizada para obtener los proyectos personales de cada integrante según su identificador.
+Función auxiliar encargada de extraer el listado de proyectos individuales de un integrante específico. Recibe como argumento el identificador del usuario, lo normaliza a minúsculas (`toLowerCase()`) para garantizar la coincidencia exacta de las claves, y consulta el diccionario de datos `diccionarioProyectosPersonales`. Retorna la información solicitada o `null` como valor de respaldo (fallback) en caso de que el identificador no exista.
 
-```js
+```javascript
 export const obtenerProyectosPersonales = (idIntegrante) => {
   return diccionarioProyectosPersonales[idIntegrante.toLowerCase()] || null;
 };
@@ -415,21 +439,15 @@ Componente encargado de mostrar los proyectos personales de cada integrante en f
 
 ---
 
-### `diccionarioIconosHabilidades`
+### `diccionarioHabilidades.js`
 
-Archivo auxiliar utilizado para asociar habilidades técnicas con sus respectivos íconos.
-
----
-
-### `IntegrantesData.json`
-
-Archivo de datos que contiene la información principal de cada integrante del equipo.
+Archivo auxiliar que actúa como un mapa para vincular las distintas habilidades técnicas con sus respectivos íconos. Esta estructura de datos contiene las referencias a los íconos de cada habilidad, permitiendo renderizarlos dinámicamente en los componentes. Esto desacopla la capa visual de la lógica, facilitando el mantenimiento de las tecnologías mostradas en la interfaz.
 
 ---
 
 ### `proyectos.json`
 
-Archivo de datos utilizado para renderizar la información de proyectos dentro de la sección correspondiente.
+Estructura de datos en formato JSON dedicada a almacenar el catálogo de trabajos y desarrollos del equipo. Si bien los primeros tres proyectos fueron desarrollados genuinamente por el equipo, los demás fueron generados sintéticamente mediante Gemini 3.1 Pro para ser utilizados como datos de prueba en el filtrado de la sección de búsqueda. Provee la información estructurada necesaria para iterar y renderizar dinámicamente las tarjetas dentro de la sección de Proyectos.
 
 ---
 

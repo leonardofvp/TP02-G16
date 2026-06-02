@@ -45,9 +45,9 @@ const diccionarioIconosHabilidd = {
     5: <FaDatabase />,
   },
   leandro: {
-    1: <TbBrandCSharp />, // <-- Ícono actualizado
+    1: <TbBrandCSharp />,
     2: <SiUnity />,
-    3: <SiPhp />,
+    3: <SiPython />,
     4: <FaBug />,
     5: <SiKotlin />,
   },
