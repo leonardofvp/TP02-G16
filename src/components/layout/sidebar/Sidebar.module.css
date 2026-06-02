@@ -13,35 +13,43 @@
   &.activo {
     left: 0;
   }
-}
 
-.logoEquipo {
-  width: 5rem;
-  border-radius: 50%;
-  border: 0.5rem solid var(--color-detalle);
-  margin-bottom: 1rem;
-}
+  .logoEquipo {
+    width: 7rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--color-detalle);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  font-family: var(--fuente-texto);
-}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: var(--fuente-texto);
+  }
 
-li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-
-  a {
+  li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    color: var(--color-texto);
+
+    a {
+      text-decoration: none;
+      color: var(--color-texto);
+    }
+  }
+}
+
+/* Móviles pequeños (400px) */
+@media (min-width: 400px) {
+  .logoEquipo {
+    max-width: 100%;
   }
 }
 
@@ -60,7 +68,6 @@ li {
 /* Escritorio (1200px) */
 @media (min-width: 1200px) {
   .logoEquipo {
-    margin: 1rem 0 2rem 0;
-    width: 7rem;
+    max-width: 100%;
   }
 }

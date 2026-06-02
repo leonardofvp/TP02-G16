@@ -3,8 +3,9 @@ import styles from "./Sidebar.module.css";
 import logoEquipo from "../../../assets/img/logo-equipo.png";
 import BotonEnlace from "../../ui/botones/BotonEnlace";
 
-function Sidebar(props) {
-  const clasesSidebar = `${styles.sidebar} ${props.menuAbierto ? styles.activo : ""}`;
+function Sidebar({ menuAbierto, toggleMenu }) {
+  const clasesSidebar = `${styles.sidebar} ${menuAbierto ? styles.activo : ""}`;
+
   return (
     <div className={clasesSidebar}>
       <img
@@ -14,25 +15,25 @@ function Sidebar(props) {
       />
       <ul>
         <li>
-          <BotonEnlace destino="/" texto="Home" />
+          <BotonEnlace destino="/" texto="Home" onClick={toggleMenu} />
         </li>
         <li>
-          <BotonEnlace destino="/bitacora" texto="Bitacora" />
+          <BotonEnlace destino="/bitacora" texto="Bitacora" onClick={toggleMenu} />
         </li>
         <li>
-          <BotonEnlace destino="/metodologias" texto="Metodologias" />
+          <BotonEnlace destino="/metodologias" texto="Metodologias" onClick={toggleMenu} />
         </li>
         <li>
-          <BotonEnlace destino="/arbol" texto="Árbol" />
+          <BotonEnlace destino="/arbol" texto="Árbol" onClick={toggleMenu} />
         </li>
         <li>
-          <BotonEnlace destino="/proyectos" texto="Proyectos" />
+          <BotonEnlace destino="/proyectos" texto="Proyectos" onClick={toggleMenu} />
         </li>
         <li>
-          <BotonEnlace destino="/api" texto="Consumo de API" />
+          <BotonEnlace destino="/api" texto="Consumo de API" onClick={toggleMenu} />
         </li>
         <li>
-          <BotonEnlace destino="/galeria" texto="Galeria" />
+          <BotonEnlace destino="/galeria" texto="Galeria" onClick={toggleMenu} />
         </li>
       </ul>
     </div>

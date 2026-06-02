@@ -14,7 +14,7 @@ function Layout() {
 
   return (
     <div className={styles.contenedorApp}>
-      <Sidebar menuAbierto={menuAbierto} />
+      <Sidebar menuAbierto={menuAbierto} toggleMenu={toggleMenu} />
       <div className={styles.contenedorMain}>
         <Header toggleMenu={toggleMenu} menuAbierto={menuAbierto} />
 
