@@ -1,9 +1,9 @@
 // mapaProyectosPersonales.js
 
 // Carolina
-import felicidad from "../assets/img/felicidad.webp";
-import moneyball from "../assets/img/moneyball.webp";
-import imitacion from "../assets/img/imitacion.webp";
+import biomecanica from "../assets/img/biomecanica1.png";
+import seguimiento from "../assets/img/seguimiento.png";
+import analisis from "../assets/img/analisis.png";
 
 // Gabriela
 import promel1 from "../assets/img/promel1.png";
@@ -28,19 +28,19 @@ import automatizadorReportes from "../assets/img/automatizador-de-reportes.avif"
 const diccionarioProyectosPersonales = {
   carolina: {
     1: {
-      titulo: "En busca de la felicidad",
-      descripcion: "Análisis estratégico sobre la resiliencia operativa frente a entornos cambiantes y críticos.",
-      img: felicidad
+      titulo: "Biomecánica Deportiva",
+      descripcion: "Análisis estratégico sobre rendimeinto e integracion con IA.",
+      img: biomecaniza
     },
     2: {
-      titulo: "Moneyball",
-      descripcion: "Implementación de modelos analíticos y optimización de datos estadísticos para la toma de decisiones.",
-      img: moneyball
+      titulo: "Seguimiento y proyección de deportistas",
+      descripcion: "Desarrollo de un sistema para registrar, monitorear y proyectar la evolución de deportistas a partir de resultados competitivos, evaluaciones físicas y variables de rendimiento.",
+      img: seguimiento
     },
     3: {
-      titulo: "El juego de la imitación",
-      descripcion: "Estudio del procesamiento de datos, lógica algorítmica fundamental y criptografía histórica.",
-      img: imitacion
+      titulo: "Analisis de datos deportivos",
+      descripcion: "Procesamiento, visualización e interpretación de datos deportivos para la generación de indicadores, detección de tendencias y apoyo a la toma de decisiones basada en evidencia.",
+      img: analisis
     },
   },
   gabriela: {
