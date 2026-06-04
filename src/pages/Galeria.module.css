@@ -96,7 +96,7 @@
 }
 
 .contenedorBotones {
-  grid-row: 1; /* Lo fuerza a ubicarse en la fila superior */
+  grid-row: 1;
   display: flex;
   gap: 2rem;
   margin-top: 2rem;

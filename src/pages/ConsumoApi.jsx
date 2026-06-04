@@ -54,10 +54,17 @@ function ExploradorNoticias() {
   return (
     <section>
       <h2>Novedades Tecnológicas</h2>
+      <p>
+        En esta sección integramos el consumo de una API REST para mostrar un
+        feed actualizado de noticias tecnológicas. Podés recorrer el historial
+        completo de publicaciones avanzando o retrocediendo de página con los
+        botones de navegación.
+      </p>
+
       <div className={styles.contenedorNoticias}>
         <div className={styles.contenedorControles}>
           <BotonBasico onClick={paginaAnterior} texto="Anterior" />
-          <span>Página {paginaActual}</span>
+          <span>{paginaActual}</span>
           <BotonBasico onClick={paginaSiguiente} texto="Siguiente" />
         </div>
 

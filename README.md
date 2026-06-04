@@ -60,7 +60,7 @@ https://tp-02-g16.vercel.app/
 
 ## Estructura de Archivos
 
-El proyecto se organizó siguiendo buenas prácticas de desarrollo en *React*, separando componentes, páginas, datos, estilos, recursos visuales y funciones auxiliares.
+El proyecto se organizó siguiendo buenas prácticas de desarrollo en _React_, separando componentes, páginas, datos, estilos, recursos visuales y funciones auxiliares.
 
 ```txt
 TP02-G16/
@@ -488,8 +488,9 @@ El proyecto está construido íntegramente con componentes funcionales de React.
 - **`useState`**: Implementado para la persistencia y actualización del estado local dentro del ciclo de vida de los componentes.
   - _Aplicación:_ Controla la renderización condicional de las interfaces de usuario. Se utiliza para manejar el estado lógico del menú de navegación móvil (`menuAbierto` / `toggleMenu`) y para almacenar el índice numérico de la imagen activa en el componente `Galeria` (`indiceActivo`), permitiendo la apertura, cierre y navegación del _Lightbox_ y y para expandir y contraer las tarjetas desplegables.
 
-- **`useEffect`**: Utilizado para aislar y ejecutar efectos secundarios (operaciones que interactúan con APIs externas o el DOM global) fuera de la fase de renderizado puro de React.
-  - _Aplicación:_ En el componente `Galeria`, se ejecuta de forma condicional al mutar el estado `indiceActivo`. Se encarga de suscribir y desuscribir eventos nativos del navegador (`window.addEventListener('keydown')`) para cerrar el _Lightbox_ con la tecla Escape. Además, manipula el CSS global (`document.body.style.overflow`) para bloquear y habilitar el scroll físico de la página. Incorpora siempre su respectiva función de retorno (_cleanup function_) para evitar fugas de memoria al desmontar el componente.
+- **`useEffect`**: Utilizado para aislar y ejecutar efectos secundarios fuera de la fase de renderizado puro.
+  - _Aplicación (Consumo de API):_ Implementado en ConsumoApi.jsx (o ExploradorNoticias.jsx) para realizar peticiones asíncronas a la API. El hook utiliza [paginaActual] como dependencia, asegurando que cada vez que el usuario navega entre páginas, se ejecute una nueva petición fetch con los parámetros correspondientes, sincronizando el estado de la vista con la paginación de la API.
+  - _Aplicación (Gestión del DOM y Eventos):_ En Galeria.jsx, se activa al mutar el estado indiceActivo para suscribir eventos del navegador (window.addEventListener('keydown')) y gestionar el scroll del documento (overflow), incluyendo siempre su función de limpieza (cleanup function) para evitar fugas de memoria al desmontar el componente o cambiar de imagen.
 
 - **`useRef`**: Proporciona un contenedor persistente que permite almacenar valores mutables sin disparar un nuevo ciclo de renderizado. Facilita el acceso imperativo a instancias de componentes o elementos del DOM.
   - _Aplicación:_ Implementado en el componente CarruselProyectos para capturar la instancia del componente Slider de terceros (react-slick). Permite realizar un control imperativo de la navegación mediante la invocación directa de los métodos internos .slickNext() y .slickPrev() desde disparadores externos (botones de navegación personalizados). Esta estrategia garantiza el desacoplamiento entre la lógica de control y la estructura visual del carrusel, manteniendo la integridad del ciclo de vida de React al evitar re-renderizados innecesarios durante la manipulación de la instancia.
@@ -578,10 +579,21 @@ Estructura de datos en formato JSON dedicada a almacenar el catálogo de trabajo
 
 ### Transiciones y efectos visuales
 
-- [x] Efectos hover en botones.
-- [x] Transiciones en tarjetas.
-- [x] Animaciones de entrada.
-- [x] Efectos visuales en enlaces, íconos y componentes interactivos.
+- [x] Efectos en botones: Los elementos interactivos presentan transiciones de color suaves que brindan respuesta inmediata al usuario al pasar el cursor, manteniendo una estética limpia y profesional.
+
+- [x] Gestión de contenido desplegable: Las tarjetas de información cuentan con una lógica de despliegue interactivo; al interactuar con el botón inferior, el componente se expande de forma controlada para revelar detalles adicionales, asegurando que la transición sea fluida y no afecte la estructura del layout.
+
+- [x] Navegación entre páginas: Se ha implementado un efecto de entrada suave con desplazamiento lateral que acompaña el cambio de vistas, brindando una sensación de continuidad al navegar por la aplicación.
+
+- [x] Carga de datos dinámicos: Las tarjetas del explorador de la API cuentan con una animación de aparición gradual, lo que suaviza el despliegue de la información a medida que se renderizan los datos obtenidos de la red.
+
+- [x] Navegación lateral (Sidebar): Los enlaces de acceso incorporan un ligero escalado y cambio tonal al detectar el cursor, facilitando la identificación del foco de navegación.
+
+- [x] Íconos de habilidades: Los elementos técnicos poseen una respuesta visual activa que combina cambios de color con una leve inclinación, reforzando la naturaleza interactiva del perfil profesional.
+
+- [x] Redes sociales y contacto: Los elementos de contacto responden mediante una ligera escala al interactuar, mejorando la respuesta visual frente a la entrada del usuario.
+
+- [x] Galería de imágenes: El componente de galería incluye animaciones dedicadas tanto para la apertura como para el cierre del visor ampliado, garantizando una experiencia envolvente y libre de interrupciones visuales.
 
 ---
 
@@ -612,6 +624,10 @@ A continuación se presentan capturas de las principales secciones del proyecto 
 ### Consumo de API externa
 
 <img src="src/assets/img/capturas/api.png" alt="Consumo de API externa" width="700">
+
+### Galeria
+
+<img src="src/assets/img/capturas/galeria.png" alt="Consumo de API externa" width="700">
 
 ### Tarjeta desplegada
 

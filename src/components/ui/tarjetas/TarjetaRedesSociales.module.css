@@ -1,6 +1,11 @@
+.contenedorRedes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .botonRed {
-  font-size: 5rem;
+  font-size: min(3rem, 10vw);
   color: var(--color-texto);
   display: flex;
   align-items: center;
@@ -12,13 +17,13 @@
 
 .botonRed:hover {
   transform: scale(1.2);
-  color: var(--color-detalle-secundario)
+  color: var(--color-detalle-secundario);
 }
 
 @media (min-width: 500px) {
   .contenedorRedes {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0;
   }
 }

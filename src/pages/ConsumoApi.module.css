@@ -5,9 +5,10 @@
 }
 
 .contenedorControles {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
+  justify-content: center;
   align-self: center;
   align-items: center;
 
