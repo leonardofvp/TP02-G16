@@ -20,7 +20,7 @@ function Proyectos() {
   return (
     <section className={styles.contenedorExplorador}>
       <h2>Proyectos</h2>
-      <p>Previamente a este tarjeta web, nuestro equipo ha colaborado con éxito en los siguientes proyectos</p>
+      <p>Previamente a este tarjeta web, nuestro equipo ha colaborado con éxito en los siguientes proyectos.</p>
 
       <h2>Explorador de proyectos</h2>
       {/* Input de Búsqueda */}
