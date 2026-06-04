@@ -76,7 +76,9 @@ TP02-G16/
 │   ├── App.jsx
 │   ├── assets/
 │   │   └── img/
+│   │       ├── analisis.png
 │   │       ├── automatizador-de-reportes.avif
+│   │       ├── biomecanica1.png
 │   │       ├── capturas/
 │   │       │   ├── api.png
 │   │       │   ├── bitacora.png
@@ -113,6 +115,7 @@ TP02-G16/
 │   │       ├── promel1.png
 │   │       ├── promel2.png
 │   │       ├── promel3.jpg
+│   │       ├── seguimiento.png
 │   │       ├── spacewars.png
 │   │       └── tropa.jpg
 │   ├── components/
