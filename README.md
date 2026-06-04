@@ -60,7 +60,7 @@ https://tp-02-g16.vercel.app/
 
 ## Estructura de Archivos
 
-El proyecto se organizó siguiendo buenas prácticas de desarrollo en React, separando componentes, páginas, datos, estilos, recursos visuales y funciones auxiliares.
+El proyecto se organizó siguiendo buenas prácticas de desarrollo en *React*, separando componentes, páginas, datos, estilos, recursos visuales y funciones auxiliares.
 
 ```txt
 TP02-G16/
