@@ -322,135 +322,46 @@ Ejemplo de habilidades incluidas en un perfil:
 La aplicación parte desde el componente raíz `App.jsx`, donde se configuran las rutas principales mediante React Router.
 
 ```txt
-TP02-G16/
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── public/
-│   └── favicon.png
-├── README.md
-├── src/
-│   ├── App.jsx
-│   ├── assets/
-│   │   └── img/
-│   │       ├── automatizador-de-reportes.avif
-│   │       ├── capturas/
-│   │       │   ├── api.png
-│   │       │   ├── bitacora.png
-│   │       │   ├── galeria.png
-│   │       │   ├── home.png
-│   │       │   ├── perfil.png
-│   │       │   └── proyectos.png
-│   │       ├── caro.png
-│   │       ├── comunidad-del-anillo.webp
-│   │       ├── configuraciones-manuales.png
-│   │       ├── dashboard-pyme.png
-│   │       ├── doss.jpg
-│   │       ├── ecobudget-pro.jpg
-│   │       ├── el-retorno-del-rey.webp
-│   │       ├── enemigo.jpg
-│   │       ├── escabio-interplanetario.png
-│   │       ├── estereosenlanube.png
-│   │       ├── felicidad.webp
-│   │       ├── imitacion.webp
-│   │       ├── intime.jpg
-│   │       ├── juegos-del-hambre-sinsajo.webp
-│   │       ├── las-dos-torres.webp
-│   │       ├── leandro-avatar.jpg
-│   │       ├── learnwithme.png
-│   │       ├── leo.png
-│   │       ├── logo-equipo.png
-│   │       ├── manu.png
-│   │       ├── matrix.jpg
-│   │       ├── melinya-avatar.jpg
-│   │       ├── menu-desplegado.png
-│   │       ├── menu-plegado.png
-│   │       ├── moneyball.webp
-│   │       ├── orion.png
-│   │       ├── palais.jpg
-│   │       ├── pie-pequeño.webp
-│   │       ├── promel1.png
-│   │       ├── promel2.png
-│   │       ├── promel3.jpg
-│   │       ├── reparame.png
-│   │       ├── spacewars.png
-│   │       └── tropa.jpg
-│   ├── components/
-│   │   ├── layout/
-│   │   │   ├── footer/
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   └── Footer.module.css
-│   │   │   ├── header/
-│   │   │   │   ├── Header.jsx
-│   │   │   │   └── Header.module.css
-│   │   │   ├── Layout.jsx
-│   │   │   ├── Layout.module.css
-│   │   │   └── sidebar/
-│   │   │       ├── Sidebar.jsx
-│   │   │       └── Sidebar.module.css
-│   │   └── ui/
-│   │       ├── barras/
-│   │       │   ├── BarraProgreso.jsx
-│   │       │   └── BarraProgreso.module.css
-│   │       ├── botones/
-│   │       │   ├── BotonBasico.jsx
-│   │       │   ├── BotonBasico.module.css
-│   │       │   ├── BotonEnlace.jsx
-│   │       │   ├── BotonEnlace.module.css
-│   │       │   ├── BotonHamburguesa.jsx
-│   │       │   └── BotonMenuHamburguesa.module.css
-│   │       ├── carrusel/
-│   │       │   ├── CarruselProyectos.jsx
-│   │       │   └── CarruselProyectos.module.css
-│   │       ├── inputs-personalizados/
-│   │       │   ├── InputBasico.jsx
-│   │       │   └── InputBasico.module.css
-│   │       └── tarjetas/
-│   │           ├── TarjetaBasica.jsx
-│   │           ├── TarjetaBasica.module.css
-│   │           ├── TarjetaDesplegable.jsx
-│   │           ├── TarjetaDesplegable.module.css
-│   │           ├── TarjetaHabilidad.jsx
-│   │           ├── TarjetaHabilidad.module.css
-│   │           ├── TarjetaIntegrante.jsx
-│   │           ├── TarjetaIntegrante.module.css
-│   │           ├── TarjetaPelicula.jsx
-│   │           ├── TarjetaPelicula.module.css
-│   │           ├── TarjetaPersonal.jsx
-│   │           ├── TarjetaPersonal.module.css
-│   │           ├── TarjetaRedesSociales.jsx
-│   │           └── TarjetaRedesSociales.module.css
-│   ├── data/
-│   │   ├── IntegrantesData.json
-│   │   └── proyectos.json
-│   ├── main.jsx
-│   ├── pages/
-│   │   ├── ArbolRenderizado.jsx
-│   │   ├── ArbolRenderizado.module.css
-│   │   ├── Bitacora.jsx
-│   │   ├── Bitacora.module.css
-│   │   ├── ConsumoApi.jsx
-│   │   ├── ConsumoApi.module.css
-│   │   ├── Galeria.jsx
-│   │   ├── Galeria.module.css
-│   │   ├── Home.jsx
-│   │   ├── Home.module.css
-│   │   ├── Metodologias.jsx
-│   │   ├── Metodologias.module.css
-│   │   ├── Perfil.jsx
-│   │   ├── Perfil.module.css
-│   │   ├── Proyectos.jsx
-│   │   └── Proyectos.module.css
-│   ├── styles/
-│   │   └── global.css
-│   └── utils/
-│       ├── diccionarioAvatares.js
-│       ├── diccionarioIconosHabilidades.jsx
-│       ├── diccionarioImagenesPeliculas.js
-│       └── diccionarioProyectosPersonales.js
-└── vite.config.js
+`[main.jsx] (Punto de entrada / Nodo Raíz)
+ └── [App.jsx] (Contexto de Enrutamiento)
+      └── [Layout.jsx] (Estructura de Interfaz Fija)
+           ├── [Header.jsx]
+           │    └── [BotonHamburguesa.jsx] (Control de UI móvil)
+           ├── [Sidebar.jsx]
+           │    └── [BotonEnlace.jsx]
+           │
+           └── [Outlet] (Punto de inyección dinámica de páginas)
+           |     │
+           |     ├── Vistas Estáticas:
+           |     │    ├── [Home.jsx]
+           |     │    │    └── [TarjetaIntegrante.jsx] ──> [BotonEnlace.jsx]
+           |     │    ├── [Metodologias.jsx]
+           |     │    │    └── [TarjetaBasica.jsx]
+           |     │    ├── [Árbol.jsx]
+           |     │    │    └── [TarjetaBasica.jsx]
+           |     │    ├── [Bitacora.jsx]
+           |     │    │    └── [TarjetaDesplegable.jsx]
+           |     │    │         ├── ──> [TarjetaBasica.jsx]
+           |     │    │         └── ──> [BotonBasico.jsx]
+           |     │    ├── [Galeria.jsx]
+           |     │    │    └── [BotonBasico.jsx]
+           |     │    ├── [Proyectos.jsx]
+           |     │    │    └── [CarruselProyectos.jsx]
+           |     │    │         └── [BotonBasico.jsx]
+           |     │    └── [ConsumoApi.jsx]
+           |     │         ├── [BotonBasico.jsx]
+           |     │         └── [TarjetaBasica.jsx]
+           |     │
+           |     └── Vistas Dinámicas (Parámetros por URL):
+           |          └── [Perfil.jsx]
+           |               └── [TarjetaIntegrante.jsx]
+           |                    ├── [TarjetaPersonal.jsx] ──────> [TarjetaBasica.jsx]
+           |                    ├── [TarjetaHabilidad.jsx]
+           |                    │    ├── ──> [TarjetaBasica.jsx]
+           |                    │    └── ──> [BarraProgreso.jsx]
+           |                    ├── [TarjetaPelicula.jsx] ──────> [BotonBasico.jsx]
+           |                    └── [TarjetaRedesSociales.jsx] ─> [TarjetaBasica.jsx]
+           └── [Footer.jsx]`
 
 ```
 

@@ -22,8 +22,7 @@ function ArbolRenderizado() {
            ├── [Header.jsx]
            │    └── [BotonHamburguesa.jsx] (Control de UI móvil)
            ├── [Sidebar.jsx]
-           │    └── [BotonEnlace.jsx] (Navegación declarativa)
-           |
+           │    └── [BotonEnlace.jsx]
            │
            └── [Outlet] (Punto de inyección dinámica de páginas)
            |     │
@@ -35,15 +34,15 @@ function ArbolRenderizado() {
            |     │    ├── [Árbol.jsx]
            |     │    │    └── [TarjetaBasica.jsx]
            |     │    ├── [Bitacora.jsx]
-           |     │    │    └── [TarjetaDesplegable.jsx] (Componente contenedor con lógica de estado)
-           |     │    │         ├── ──> [TarjetaBasica.jsx] (Plantilla visual base)
-           |     │    │         └── ──> [BotonBasico.jsx] (Controlador del evento onClick)
+           |     │    │    └── [TarjetaDesplegable.jsx]
+           |     │    │         ├── ──> [TarjetaBasica.jsx]
+           |     │    │         └── ──> [BotonBasico.jsx]
            |     │    ├── [Galeria.jsx]
            |     │    │    └── [BotonBasico.jsx]
            |     │    ├── [Proyectos.jsx]
            |     │    │    └── [CarruselProyectos.jsx]
            |     │    │         └── [BotonBasico.jsx]
-           |     │    └── [ConsumoApi.jsx] (ExploradorNoticias)
+           |     │    └── [ConsumoApi.jsx]
            |     │         ├── [BotonBasico.jsx]
            |     │         └── [TarjetaBasica.jsx]
            |     │
@@ -72,13 +71,13 @@ function ArbolRenderizado() {
             <li>
               <strong>Componentes de Nivel Superior (Layout):</strong> Actúan
               como contenedores globales estructurales. <code>Layout.jsx</code>{" "}
-              coordina la posición fija del <code>Header</code> y la{" "}
-              <code>Sidebar</code>, permitiendo que solo el contenido del{" "}
+              coordina la posición fija del <code>Header</code>, la{" "}
+              <code>Sidebar</code> y el <code>Footer</code>, permitiendo que solo el contenido del{" "}
               <code>Outlet</code> se re-renderice al cambiar de ruta.
             </li>
             <li>
               <strong>Componentes Hijos y Reutilizables (UI):</strong> Ubicados
-              en los nodos hoja del árbol (<code>TarjetaBasica</code>,{" "}
+              en los nodos hoja del árbol como (<code>TarjetaBasica</code>,{" "}
               <code>BotonBasico</code>). Reciben la información de forma
               unidireccional a través de props y se comportan como componentes
               puros y atómicos encargados exclusivamente de la representación
