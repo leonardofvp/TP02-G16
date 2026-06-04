@@ -23,7 +23,6 @@
 }
 
 .codigoArbol {
-  font-family: "Consolas", "Monaco", monospace;
   white-space: pre;
   margin: 0;
   color: var(--color-texto);
