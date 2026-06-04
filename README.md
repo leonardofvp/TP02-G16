@@ -322,7 +322,7 @@ Ejemplo de habilidades incluidas en un perfil:
 La aplicación parte desde el componente raíz `App.jsx`, donde se configuran las rutas principales mediante React Router.
 
 ```txt
-`[main.jsx] (Punto de entrada / Nodo Raíz)
+[main.jsx] (Punto de entrada / Nodo Raíz)
  └── [App.jsx] (Contexto de Enrutamiento)
       └── [Layout.jsx] (Estructura de Interfaz Fija)
            ├── [Header.jsx]
@@ -361,7 +361,7 @@ La aplicación parte desde el componente raíz `App.jsx`, donde se configuran la
            |                    │    └── ──> [BarraProgreso.jsx]
            |                    ├── [TarjetaPelicula.jsx] ──────> [BotonBasico.jsx]
            |                    └── [TarjetaRedesSociales.jsx] ─> [TarjetaBasica.jsx]
-           └── [Footer.jsx]`
+           └── [Footer.jsx]
 
 ```
 
