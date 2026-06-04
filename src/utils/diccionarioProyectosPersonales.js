@@ -30,7 +30,7 @@ const diccionarioProyectosPersonales = {
     1: {
       titulo: "Biomecánica Deportiva",
       descripcion: "Análisis estratégico sobre rendimeinto e integracion con IA.",
-      img: biomecaniza
+      img: biomecanica
     },
     2: {
       titulo: "Seguimiento y proyección de deportistas",
